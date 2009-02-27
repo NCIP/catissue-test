@@ -1,0 +1,106 @@
+<?xml version ="1.0"?>
+
+<!--Ant Script for create Build for caTISSUE Core-->
+
+<project name="caTissueCore Client" >
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+			<classpath>
+				<pathelement location="./lib/ant-contrib.jar" />
+			</classpath>
+		</taskdef>
+	<!--define require dir and Properties -->	
+	<property name="base.dir" value="."/>
+	<property name="target.dir" value="./bin" />
+	<property name="conf.dir" value="conf" />
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="./src" />
+	<property name="report.dir" value="." />
+	<property name="mysql.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+	<property name="mysql.driver" value="com.mysql.jdbc.Driver"/>
+	<property name="oracle.dialect" value="org.hibernate.dialect.Oracle9Dialect"/>
+	<property name="oracle.driver" value="oracle.jdbc.driver.OracleDriver"/>
+
+	<property file="client.properties" />
+
+	<path id="cp">
+		<pathelement path="${conf.dir}"/>
+		<pathelement path="${base.dir}/bin"/>
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+		
+		
+	</path>
+    
+	
+	<path id="app.classpath">
+		<fileset dir="${base.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	 
+ 
+    <target name="compile">
+	  	<javac destdir="${target.dir}" includes="**/*.*" includeAntRuntime="false">
+	            <src path="${base.dir}/src"/>
+	            <classpath>
+	       		  <fileset dir="lib">
+	        			<include name="**/*.jar"/>
+	        	  </fileset>
+	            </classpath>
+	     </javac>
+    </target>
+	<target name="init">		
+
+		<copy file="./my_hib/myhibernate.cfg.xml" tofile="./my_hib/hibernate.cfg.xml" overwrite="true"/>
+		<if>
+			<equals arg1="mysql" arg2="${database.type}" />
+			<then>
+				<antcall target="mysql_config" />
+			</then>
+			<elseif>
+				<equals arg1="oracle" arg2="${database.type}" />
+				<then>
+					<antcall target="oracle_config" />
+
+				</then>
+			</elseif>
+		</if>
+
+	</target>
+	<target name="mysql_config">
+			<replace dir="./my_hib" propertyfile="client.properties">
+				<include name="hibernate.cfg.xml" />
+				<replacefilter token="@@dialect@@" value="${mysql.dialect}" />
+				<replacefilter token="@@databaseurl@@" value="jdbc:mysql://${database.host}:${database.port}/${database.name}" />
+				<replacefilter token="@@username@@" value="${database.username}" />
+				<replacefilter token="@@pasword@@" value="${database.password}" />
+				<replacefilter token="@@databasedriver@@" value="${mysql.driver}" />
+			</replace>
+	</target>
+	<target name="oracle_config">
+			<replace dir="./my_hib" propertyfile="client.properties">
+				<include name="hibernate.cfg.xml" />
+				<replacefilter token="@@dialect@@" value="${oracle.dialect}" />
+				<replacefilter token="@@databaseurl@@" value="jdbc:mysql://${database.host}:${database.port}/${database.name}" />
+				<replacefilter token="@@username@@" value="${database.username}" />
+				<replacefilter token="@@pasword@@" value="${database.password}" />
+				<replacefilter token="@@databasedriver@@" value="${oracle.driver}" />
+			</replace>
+	</target>
+
+	<!-- run TestClient java file -->
+	<target name="runQuery" depends="init,compile">
+		<setproxy proxyhost="ptproxy.persistent.co.in" proxyport="8080" proxyuser="sachin_lale" proxypassword="$achin123"/>
+		<java classname="CaTissueClient" fork="true">
+			<jvmarg value="-Xms128m"/>
+			<jvmarg value="-Xmx1024m"/>
+			<classpath refid="cp"/>
+			<classpath>
+				<pathelement location="${src.dir}"/>
+			</classpath>
+			<arg value="${base.dir}/client.properties" />
+		</java>
+	</target>
+
+</project>
