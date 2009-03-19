@@ -102,5 +102,18 @@
 			<arg value="${base.dir}/client.properties" />
 		</java>
 	</target>
+	
+	<target name="runCQL" depends="init,compile">
+			<setproxy proxyhost="ptproxy.persistent.co.in" proxyport="8080" proxyuser="sachin_lale" proxypassword="$achin123"/>
+			<java classname="TestCaTissueClient" fork="true">
+				<jvmarg value="-Xms128m"/>
+				<jvmarg value="-Xmx1024m"/>
+				<classpath refid="cp"/>
+				<classpath>
+					<pathelement location="${src.dir}"/>
+				</classpath>
+				<arg value="${base.dir}/client.properties" />
+			</java>
+		</target>
 
 </project>
