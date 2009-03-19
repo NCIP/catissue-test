@@ -96,7 +96,7 @@ public class TestCaTissueClient
 			{
 				String url = tokens.nextToken();
 				System.out.println(url);
-				String centerName = "Yale";//getCenterName(url);
+				String centerName = getCenterName(url);
 				client = new CaTissueSuiteClient(url,proxy);
 				
 				List<CollectionProtocol> cpList = new CollectionProtocolQuery().getCollectionProtocolList(client);
