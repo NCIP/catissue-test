@@ -51,6 +51,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.mapping.Property;
 
+import test.gov.nih.nci.security.TestClient;
+
 
 public class TestCaTissueClient
 {
@@ -98,7 +100,7 @@ public class TestCaTissueClient
 				System.out.println(url);
 				String centerName = getCenterName(url);
 				client = new CaTissueSuiteClient(url,proxy);
-				
+
 				List<CollectionProtocol> cpList = new CollectionProtocolQuery().getCollectionProtocolList(client);
 /*				List<CollectionProtocol> cpList = new ArrayList<CollectionProtocol>();
 				CollectionProtocol c = new CollectionProtocol();
@@ -213,10 +215,19 @@ public class TestCaTissueClient
 	
 	public static String getCenterName(String url) throws Exception
 	{
-		EndpointReferenceType e = new EndpointReferenceType (new org.apache.axis.types.URI(url));
-    	System.out.println("Add "+e.getAddress());
-    	ServiceMetadata metadata = MetadataUtils.getServiceMetadata(e);
-    	String centerName = metadata.getHostingResearchCenter().getResearchCenter().getDisplayName();
+		String centerName="";
+		try
+		{
+			EndpointReferenceType e = new EndpointReferenceType (new org.apache.axis.types.URI(url));
+	    	System.out.println("Add "+e.getAddress());
+	    	ServiceMetadata metadata = MetadataUtils.getServiceMetadata(e);
+	    	centerName = metadata.getHostingResearchCenter().getResearchCenter().getDisplayName();
+		}
+		catch(Exception e)
+		{
+			System.out.println("ERROR orrcured in getting service metadata: "+e.getMessage());
+			centerName = url;
+		}
     	System.out.println("centerName: "+centerName);
     	return centerName;
 	}
@@ -274,6 +285,49 @@ public class TestCaTissueClient
         IFSUserClient dorian = new IFSUserClient(prop.getProperty("dorainServiceURL"));
         System.out.println("creating proxy....");
         proxy = dorian.createProxy(saml, lifetime, delegationLifetime);
+	}
+	public static void testQuery() throws Exception
+	{
+		CQLQuery query = new CQLQuery(); 
+		gov.nih.nci.cagrid.cqlquery.Object target = new gov.nih.nci.cagrid.cqlquery.Object();
+				
+		target.setName(MolecularSpecimen.class.getName());
+		
+		Group group = new Group();
+		group.setLogicRelation(LogicalOperator.AND);
+		
+		Attribute id1= new Attribute();
+		id1.setPredicate(Predicate.GREATER_THAN_EQUAL_TO);
+		id1.setName("id");
+		id1.setValue("1000");
+		
+		Attribute id2= new Attribute();
+		id2.setPredicate(Predicate.LESS_THAN_EQUAL_TO);
+		id2.setName("id");
+		id2.setValue("10031");
+		
+		Attribute[] samples = new Attribute[]{id1,id2};
+		
+		
+		group.setAttribute(samples);
+		
+		target.setGroup(group);
+		query.setTarget(target);
+		
+		Utils.serializeDocument("my.caml", query, new QName("http://CQL.caBIG/1/gov.nih.nci.cagrid.CQLQuery"));
+		
+		CQLQueryResults cqlQueryResult = client.query(query);
+		CQLQueryResultsIterator iter = new CQLQueryResultsIterator(cqlQueryResult, true);
+		while(iter.hasNext())
+		{
+			FileWriter fw = new FileWriter("temp.xml");
+			fw.write((String)iter.next());
+			fw.close();
+			MolecularSpecimen specimen = (MolecularSpecimen)XMLUtility.fromXML(new File("temp.xml"));
+			
+			System.out.println("MolecularSpecimen id "+specimen.getId());
+		
+		}
 	}
 	
 }
