@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
+CATISSUE SUITE v1.1 API TEST CASE CLIENT BY COLLECTION PROTOCOL BASIS
+-------------------------------------------------------------------------------
+This utility executes the query to get the result form each configurd instance in following CSV format  
+Center name,CP title, # Participants registered, Whole Blood Samples collected, Serum Samples collected, Plasma Samples collected, Other Fluid Samples collected, DNA Samples collected, RNA Samples collected, Other Molecular Samples collected., Cell Samples collected
+
+Steps to eecute query 
+1. configured cagridServiceURL,dorainServiceURL,dorainUser,dorainPassword
+2. Execute command 'ant runCQL' from command prompt 
+-------------------------------------------------------------------------------
 CATISSUE SUITE v1.1 API TEST CASE CLIENT
 -------------------------------------------------------------------------------
 This utility test case produces stats on a pre-defined set of caTissue Suite 1.1 grid instances, 
