@@ -1,0 +1,4 @@
+
+Command to mount A folder of ps3252 on Linux machine which runs caTissue BO Automation
+---------------------------------------------------------------------------------------------------
+mount -t cifs -o username=administrator,workgroup=ps3252 //ps3252/BO_Report /home/Hudson_Home/BO_email_report
