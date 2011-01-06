@@ -14,6 +14,7 @@ import junit.framework.TestSuite;
 import junit.textui.TestRunner;
 import au.com.bytecode.opencsv.CSVReader;
 import edu.wustl.testframework.util.DataObject;
+import edu.wustl.testframework.util.DataSourceFinder;
 import edu.wustl.testframework.util.TestCaseDataUtil;
 
 /**
@@ -55,6 +56,8 @@ public class StrutsTestAutomation
 		String propHome = System.getProperty("strutsProp.home");
 		System.out.println("propHome  "+propHome);
 		TestCaseDataUtil.loadProperties(propHome+"/strutsTestPaths.properties");
+
+		DataSourceFinder.setAllValues(TestCaseDataUtil.getProperty("install.properties.file.path"));
 //	    TestCaseDataUtil.loadProperties("E:/Program Files/Eclipse-Galileo/eclipse/workspace/catissuecore_/software/caTissue/test/struts/CaTissue_TestCases/strutsTestPaths.properties");
 	    TestCaseDataUtil.createDetailReportFile();
 	    System.out.println("found  "+ TestCaseDataUtil.getProperty("data.file.path"));

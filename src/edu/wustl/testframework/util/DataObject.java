@@ -5,13 +5,26 @@ import java.util.StringTokenizer;
 
 public class DataObject
 {
-	String id;
-	String name;
-	String values[];
-	String username;
-	String password;
-	String className;
+	private String id;
+	private String name;
+	private String values[];
+	private String username;
+	private String password;
+	private String className;
+	private String expectedDataSetFileName;
+	private String sqlFileForActualDataSet;
+	private boolean dbVerification;
 
+
+	public boolean isDbVerification()
+	{
+		return dbVerification;
+	}
+
+	public void setDbVerification(boolean dbVerification)
+	{
+		this.dbVerification = dbVerification;
+	}
 	public String getClassName() {
 		return className;
 	}
@@ -54,23 +67,49 @@ public class DataObject
 	{
 		this.values = values;
 	}
+
+	public String getExpectedDataSetFileName()
+	{
+		return expectedDataSetFileName;
+	}
+
+	public void setExpectedDataSetFileName(String expectedDataSetFileName)
+	{
+		this.expectedDataSetFileName = expectedDataSetFileName;
+	}
+
+	public String getSqlFileForActualDataSet()
+	{
+		return sqlFileForActualDataSet;
+	}
+
+	public void setSqlFileForActualDataSet(String sqlFileForActualDataSet)
+	{
+		this.sqlFileForActualDataSet = sqlFileForActualDataSet;
+	}
+
 	public void addValues(String [] values)
 	{
 
-			id = values[0];
-			name = values[1];
-			className = values[2];
-			username = values[3];
-			password = values[4];
-			StringTokenizer st = new StringTokenizer(values[5], "|");
-			String arr[] = new String[st.countTokens()];
-			int i=0;
-			while (st.hasMoreElements())
-			{
-				arr[i] = new String();
-				arr[i] = st.nextElement().toString();
-				i++;
-			}
-			this.values = arr;
+		this.setId(values[0]);
+		this.setName(values[1]);
+		this.setClassName(values[2]);
+		this.setUsername(values[3]);
+		this.setPassword(values[4]);
+		StringTokenizer st = new StringTokenizer(values[5], "|");
+		String arr[] = new String[st.countTokens()];
+		int i=0;
+		while (st.hasMoreTokens())
+		{
+			arr[i] = new String();
+			arr[i] = st.nextElement().toString();
+			i++;
+		}
+		this.setExpectedDataSetFileName(values[6]);
+		this.setSqlFileForActualDataSet(values[7]);
+		this.values = arr;
 	}
+
+
+
 }

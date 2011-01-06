@@ -6,9 +6,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 import junit.framework.TestResult;
@@ -55,11 +52,11 @@ public class TestCaseDataUtil
 				System.out.println("dataObject :"+dataObject);
 				if(dataObject == null)
 				{
-					line.append(1+","+name+","+testResult+",,,,,"+err);
+					line.append(1+","+name+","+testResult+",,,"+Boolean.toString(false)+",,"+err);
 				}
 				else
 				{
-					line.append(dataObject.getId()+","+name+","+testResult+",,,,,"+err);
+					line.append(dataObject.getId()+","+name+","+testResult+",,,"+dataObject.isDbVerification()+",,"+err);
 				}
 //				}
 				line.deleteCharAt(line.length()-1);
