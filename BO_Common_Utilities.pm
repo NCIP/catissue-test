@@ -423,7 +423,7 @@ sub report_verification {
 		}
 		if(uc($app_name) eq "CATISSUE")
 		{
-			$tc_actual_msg = join( ",", @result_csv_row[$index..$#result_csv_row]);
+			$tc_actual_msg = join( "", @result_csv_row[$index..$#result_csv_row]);
 		}
         print "\ntc_exp_msg:$tc_exp_msg";
         print "\nActual Mesage:$tc_actual_msg";
