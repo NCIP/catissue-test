@@ -1,12 +1,13 @@
 package edu.wustl.testframework;
 import java.lang.reflect.Method;
 
+import junit.framework.AssertionFailedError;
+import junit.framework.TestResult;
+
 import org.dbunit.Assertion;
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.dataset.IDataSet;
 
-import junit.framework.AssertionFailedError;
-import junit.framework.TestResult;
 import servletunit.struts.MockStrutsTestCase;
 import edu.wustl.testframework.util.DBUnitUtility;
 import edu.wustl.testframework.util.DataObject;
@@ -100,8 +101,9 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 
 	private boolean isToCompare()
 	{
-		return getDataObject().getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))||
-		getDataObject().getName().equals(TestCaseDataUtil.getProperty("logout.testcase.name"));
+		return !(getDataObject().getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))
+				||	getDataObject().getName().equals(TestCaseDataUtil.getProperty("logout.testcase.name"))
+		        );
 	}
 
 	public TestResult run() {
