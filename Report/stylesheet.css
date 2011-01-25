@@ -1,0 +1,45 @@
+BODY {
+	FONT: 68% verdana,arial,helvetica; COLOR: #000000
+}
+TABLE TR TD {
+	FONT-SIZE: 68%
+}
+TABLE TR TH {
+	FONT-SIZE: 68%
+}
+TABLE.details TR TH {
+	FONT-WEIGHT: bold; BACKGROUND: #a6caf0; TEXT-ALIGN: left
+}
+TABLE.details TR TD {
+	BACKGROUND: #eeeee0
+}
+P {
+	MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 1em; LINE-HEIGHT: 1.5em
+}
+H1 {
+	MARGIN: 0px 0px 5px; FONT: 165% verdana,arial,helvetica
+}
+H2 {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 0.5em; FONT: bold 125% verdana,arial,helvetica
+}
+H3 {
+	MARGIN-BOTTOM: 0.5em; FONT: bold 115% verdana,arial,helvetica
+}
+H4 {
+	MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica
+}
+H5 {
+	MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica
+}
+H6 {
+	MARGIN-BOTTOM: 0.5em; FONT: bold 100% verdana,arial,helvetica
+}
+.Error {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.Failure {
+	FONT-WEIGHT: bold; COLOR: purple
+}
+.Properties {
+	TEXT-ALIGN: right
+}
