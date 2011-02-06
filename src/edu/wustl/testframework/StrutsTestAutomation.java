@@ -65,7 +65,7 @@ public class StrutsTestAutomation
 	    String loginTestClassName = TestCaseDataUtil.getProperty("login.testcaseClass.name");
 	    String loginTestCaseName = TestCaseDataUtil.getProperty("login.testcase.name");
 
-	    String logoutTestClassName = TestCaseDataUtil.getProperty("login.testcaseClass.name");
+	    String logoutTestClassName = TestCaseDataUtil.getProperty("logout.testcaseClass.name");
 	    String logoutTestCaseName = TestCaseDataUtil.getProperty("logout.testcase.name");
 
 	    String initTestClassName = TestCaseDataUtil.getProperty("init.testcaseclass.name");
