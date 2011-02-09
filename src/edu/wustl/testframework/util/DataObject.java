@@ -1,7 +1,6 @@
 package edu.wustl.testframework.util;
 
 
-import java.util.StringTokenizer;
 
 public class DataObject
 {
@@ -90,21 +89,12 @@ public class DataObject
 
 	public void addValues(String [] values)
 	{
-
 		this.setId(values[0]);
 		this.setName(values[1]);
 		this.setClassName(values[2]);
 		this.setUsername(values[3]);
 		this.setPassword(values[4]);
-		StringTokenizer st = new StringTokenizer(values[5], "|");
-		String arr[] = new String[st.countTokens()];
-		int i=0;
-		while (st.hasMoreTokens())
-		{
-			arr[i] = new String();
-			arr[i] = st.nextElement().toString();
-			i++;
-		}
+		String arr[] = values[5].split("\\|");
 		this.setExpectedDataSetFileName(values[6]);
 		this.setSqlFileForActualDataSet(values[7]);
 		this.values = arr;
