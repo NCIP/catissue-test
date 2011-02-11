@@ -54,11 +54,11 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 		}
 
 		catch (Throwable e) { // 2
-			exp=e.getCause().getMessage();
-			if(exp == null)
+			exp=e.getMessage();
+			/*if(exp == null)
 			{
 				exp = e.toString();
-			}
+			}*/
 			result.addError(this, e);
 		}
 		finally {
@@ -101,7 +101,7 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 
 	private boolean isToCompare()
 	{
-		return !(getDataObject().getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))
+		return (getDataObject().getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))
 				||	getDataObject().getName().equals(TestCaseDataUtil.getProperty("logout.testcase.name"))
 		        );
 	}
