@@ -1,5 +1,12 @@
 package edu.wustl.testframework;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Method;
+import java.sql.Connection;
+import java.sql.Statement;
 
 import junit.framework.AssertionFailedError;
 import junit.framework.TestResult;
@@ -46,10 +53,11 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			setUp();
 			runTest();
 			compareDataSets();
-
+			truncateAuditTables();
 		}
 		catch (AssertionFailedError e) { //1
 			exp=e.getMessage();
+			e.printStackTrace();
 			result.addFailure(this, e);
 		}
 
@@ -64,7 +72,7 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 		finally {
 			try
 			{
-				System.out.println("resut Object: "+result.toString());
+				System.out.println("result Object: "+result.toString());
 				TestCaseDataUtil.writeToFile(result,getName(),exp,dataObject);
 				tearDown();
 			}
@@ -75,35 +83,83 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 		}
 	}
 
+	private void truncateAuditTables()
+	{
+		FileInputStream auditSQL;
+		Connection conn=null;
+		Statement stmt =null;
+		try
+		{
+			auditSQL=new FileInputStream(new File(TestCaseDataUtil.getProperty("truncate.tables.file.path")));
+			DataInputStream in = new DataInputStream(auditSQL);
+			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+			String strLine;
+			conn= DBUnitUtility.getConnection();
+			stmt = conn.createStatement();
+			while ((strLine = br.readLine()) != null)
+			{
+				stmt.addBatch(strLine);
+			}
+			stmt.executeBatch();
+		}
+		catch (Exception e)
+		{
+			System.out.println("Unable to truncate audit tables.");
+			e.printStackTrace();
+		}
+	}
+
 	public void compareDataSets()
 	{
 		if(dataObject!=null && isToCompare())
 		{
 			IDataSet expectedDataSet;
 			IDataSet actualDataSet;
-			expectedDataSet = DBUnitUtility.getExpectedDataSet(getDataObject().getExpectedDataSetFileName());
-			actualDataSet=DBUnitUtility.getActualDataSet(getDataObject().getSqlFileForActualDataSet());
-			try
+			if(getDataObject().getExpectedDataSetFileName()!=null &&
+					getDataObject().getSqlFileForActualDataSet()!=null &&
+					!getDataObject().getExpectedDataSetFileName().equalsIgnoreCase("") &&
+					!getDataObject().getSqlFileForActualDataSet().equalsIgnoreCase(""))
 			{
-				Assertion.assertEquals(expectedDataSet, actualDataSet);
-				dataObject.setDbVerification(true);
+				expectedDataSet = DBUnitUtility.getExpectedDataSet(getDataObject().getExpectedDataSetFileName());
+				actualDataSet=DBUnitUtility.getActualDataSet(getDataObject().getSqlFileForActualDataSet());
+				/*try
+			{
+				FlatXmlDataSet.write(expectedDataSet, new FileOutputStream("expectedDataSet.xml"));
+				FlatXmlDataSet.write(actualDataSet, new FileOutputStream("actualDataSet.xml"));
 			}
-			catch (DatabaseUnitException e)
+			catch (Exception e1)
 			{
-				//assertFalse(e.getMessage(), true);
-				dataObject.setDbVerification(false);
-				assertFalse(e.getMessage(), true);
-				//fail("failed");
-				//e.printStackTrace();
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}*/
+				try
+				{
+					Assertion.assertEquals(expectedDataSet, actualDataSet);
+					dataObject.setDbVerification(true);
+				}
+				catch (DatabaseUnitException e)
+				{
+					dataObject.setDbVerification(false);
+					assertFalse(e.getMessage(), true);
+				}
 			}
 		}
 	}
 
 	private boolean isToCompare()
 	{
-		return (getDataObject().getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))
-				||	getDataObject().getName().equals(TestCaseDataUtil.getProperty("logout.testcase.name"))
-		        );
+		boolean flag=false;
+		if(getName().equals(TestCaseDataUtil.getProperty("login.testcase.name"))||
+				getName().equals(TestCaseDataUtil.getProperty("logout.testcase.name"))||
+				getName().equals(TestCaseDataUtil.getProperty("init.testcase.name")))
+		{
+			flag=false;
+		}
+		else
+		{
+			flag=true;
+		}
+		return flag;
 	}
 
 	public TestResult run() {

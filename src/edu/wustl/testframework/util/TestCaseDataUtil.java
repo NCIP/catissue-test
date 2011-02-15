@@ -94,7 +94,7 @@ public class TestCaseDataUtil
 			file.delete();
 		file.createNewFile();
 		writer = new FileWriter(file,true);
-		int valueListSize = 8;
+		//int valueListSize = 8;
 		StringBuffer line = new StringBuffer();
 			line.setLength(0);
 
