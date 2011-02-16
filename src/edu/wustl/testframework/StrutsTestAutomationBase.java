@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 import java.sql.Connection;
@@ -14,6 +15,7 @@ import junit.framework.TestResult;
 import org.dbunit.Assertion;
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.dataset.IDataSet;
+import org.dbunit.dataset.xml.FlatXmlDataSet;
 
 import servletunit.struts.MockStrutsTestCase;
 import edu.wustl.testframework.util.DBUnitUtility;
@@ -113,25 +115,50 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 	{
 		if(dataObject!=null && isToCompare())
 		{
+
 			IDataSet expectedDataSet;
 			IDataSet actualDataSet;
-			if(getDataObject().getExpectedDataSetFileName()!=null &&
+			if(getDataObject().getExpectedDataSetFileName()==null ||
+					getDataObject().getSqlFileForActualDataSet()==null ||
+					getDataObject().getExpectedDataSetFileName().equalsIgnoreCase("") ||
+					getDataObject().getSqlFileForActualDataSet().equalsIgnoreCase(""))
+			{
+				dataObject.setDbVerification(false);
+				try
+				{
+					throw new DatabaseUnitException();
+				}
+				catch (DatabaseUnitException e)
+				{
+					dataObject.setDbVerification(false);
+					assertFalse(e.getMessage(), true);
+					//e.printStackTrace();
+				}
+			}
+			else
+			{
+				/*if(getDataObject().getExpectedDataSetFileName()!=null &&
 					getDataObject().getSqlFileForActualDataSet()!=null &&
 					!getDataObject().getExpectedDataSetFileName().equalsIgnoreCase("") &&
 					!getDataObject().getSqlFileForActualDataSet().equalsIgnoreCase(""))
-			{
+			{*/
 				expectedDataSet = DBUnitUtility.getExpectedDataSet(getDataObject().getExpectedDataSetFileName());
 				actualDataSet=DBUnitUtility.getActualDataSet(getDataObject().getSqlFileForActualDataSet());
-				/*try
-			{
-				FlatXmlDataSet.write(expectedDataSet, new FileOutputStream("expectedDataSet.xml"));
-				FlatXmlDataSet.write(actualDataSet, new FileOutputStream("actualDataSet.xml"));
-			}
-			catch (Exception e1)
-			{
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}*/
+				try
+				{
+					String path=System.getProperty("user.home")+File.separator+"actual_dataSets";
+					File dir= new File(path);
+					if(dir.exists() && dir.isDirectory())
+					{
+						//FlatXmlDataSet.write(expectedDataSet, new FileOutputStream("expectedDataSet.xml"));
+						FlatXmlDataSet.write(actualDataSet, new FileOutputStream(dir+File.separator+"actualDataSet"+"_"+getName()+".xml"));
+					}
+				}
+				catch (Exception e1)
+				{
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				try
 				{
 					Assertion.assertEquals(expectedDataSet, actualDataSet);
@@ -143,6 +170,7 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 					assertFalse(e.getMessage(), true);
 				}
 			}
+			//}
 		}
 	}
 
