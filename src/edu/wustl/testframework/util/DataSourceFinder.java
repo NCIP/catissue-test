@@ -63,6 +63,8 @@ public class DataSourceFinder
         databaseType = properties.getProperty("database.type");
         databaseName = properties.getProperty("database.name");
         databaseUser = properties.getProperty("database.username");
+        if(databaseUser == null)
+        	databaseUser = properties.getProperty("database.user");
         databasePassword = properties.getProperty("database.password");
         port = Integer.parseInt(properties.getProperty("database.port"));
         databaseHost = properties.getProperty("database.server");
