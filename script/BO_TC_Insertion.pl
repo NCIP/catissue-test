@@ -32,7 +32,7 @@ my ($dbh, $sth,$sql, @result, @tc_data);
 my ($tc_short_title, $tc_title, $tc_summary, $is_tc_available, $tc_db);
 my ($tc_id_db, $tc_id_csv);
 my $execution_type='BOTH';
-my $test_type=1; # 2 is for Manual and 1 is for Automation
+my $test_type=3; # 1 is for Automatic , 2 is for Manual and 3 is for Automated (BO)
 my $os=$^O;
 	
 #Converting file into Linux format. Its required if file is edited on Windows and run on Linux. 
@@ -61,15 +61,15 @@ elsif ($line =~ /(tmt_version=)/g)
 	$tmt_ver= $';
 }
 
-elsif ($line =~ /(tmt_component=)/g)
-{
-	$tmt_comp= $';
-}
-
-elsif ($line =~ /(tmt_testarea=)/g)
-{
-	$tmt_testarea= $';
-}
+#elsif ($line =~ /(tmt_component=)/g)
+#{
+#	$tmt_comp= $';
+#}
+#
+#elsif ($line =~ /(tmt_testarea=)/g)
+#{
+#	$tmt_testarea= $';
+#}
 
 elsif ($line =~ /(tmt_req_name=)/g)
 {
@@ -93,7 +93,12 @@ elsif ($line =~ /(tmt_database=)/g)
 
 }
 close (FP1);
-if ( $tc_file eq  "" || $tmt_prod eq  "" || $tmt_ver eq "" || $tmt_comp eq "" || $tmt_testarea eq "" ||
+#if ( $tc_file eq  "" || $tmt_prod eq  "" || $tmt_ver eq "" || $tmt_comp eq "" || $tmt_testarea eq "" ||
+#	 $test_req_name eq "" || $tc_date eq ""  || $login_name eq "" || $database eq "")
+#{
+#  die ("Configuration parameter(s) are missing.\n");
+#}
+if ( $tc_file eq  "" || $tmt_prod eq  "" || $tmt_ver eq "" ||
 	 $test_req_name eq "" || $tc_date eq ""  || $login_name eq "" || $database eq "")
 {
   die ("Configuration parameter(s) are missing.\n");
@@ -137,27 +142,27 @@ die ("\nVersion name not found!") if ($ver_id eq "");
 
 ############## Getting Component Id #####################################
 
-$sql="select comp_id from component_info where comp_name=\'$tmt_comp\' and  ver_id=$ver_id"; 
-$sth = $dbh->prepare($sql);
-$sth->execute or die ("\ncould not execute component_info query.");
-@result=$sth->fetchrow_array();
-$sth->finish;
-$comp_id=$result[0];
-print "\nComponent Id:$comp_id";
-
-die ("\nComponent name not found!") if ($comp_id eq "");
+#$sql="select comp_id from component_info where comp_name=\'$tmt_comp\' and  ver_id=$ver_id"; 
+#$sth = $dbh->prepare($sql);
+#$sth->execute or die ("\ncould not execute component_info query.");
+#@result=$sth->fetchrow_array();
+#$sth->finish;
+#$comp_id=$result[0];
+#print "\nComponent Id:$comp_id";
+#
+#die ("\nComponent name not found!") if ($comp_id eq "");
 
 ############## Getting Test Area Id #####################################
 
-$sql="select ta_id from testarea_info where ta_name=\'$tmt_testarea\' and comp_id=$comp_id"; 
-$sth = $dbh->prepare($sql);
-$sth->execute or die ("\ncould not execute testarea_info query.");
-@result=$sth->fetchrow_array();
-$sth->finish;
-$ta_id=$result[0];
-print "\nTest Area Id: $ta_id";
-
-die ("\nTest area name not found!") if ($ta_id eq "");
+#$sql="select ta_id from testarea_info where ta_name=\'$tmt_testarea\' and comp_id=$comp_id"; 
+#$sth = $dbh->prepare($sql);
+#$sth->execute or die ("\ncould not execute testarea_info query.");
+#@result=$sth->fetchrow_array();
+#$sth->finish;
+#$ta_id=$result[0];
+#print "\nTest Area Id: $ta_id";
+#
+#die ("\nTest area name not found!") if ($ta_id eq "");
 
 ############## Getting Requirement Id ###################################
 
@@ -198,15 +203,15 @@ die ("\nUnable to fetch maximum Test Case Id!") if ($max_tc_id eq "");
 
 ############## Get Existing Test Case List from database #############################################
 
-$sql="select tc_id from testcase_info where auto_id in (select auto_id from component where ta_id = $ta_id ) order by tc_id"; 
-$sth = $dbh->prepare($sql);
-$sth->execute or die ("\ncould not execute testcase_info query.");
-while (@result=$sth->fetchrow_array())
-{
-	push (@tc_list,$result[0]);
-}
-$sth->finish;
-#print "\nTest Case List: @tc_list";
+#$sql="select tc_id from testcase_info where auto_id in (select auto_id from component where ta_id = $ta_id ) order by tc_id"; 
+#$sth = $dbh->prepare($sql);
+#$sth->execute or die ("\ncould not execute testcase_info query.");
+#while (@result=$sth->fetchrow_array())
+#{
+#	push (@tc_list,$result[0]);
+#}
+#$sth->finish;
+##print "\nTest Case List: @tc_list";
 
 ############## Inserting New TCs #########################################
 print "\n\nTest Suite File: $tc_file";
@@ -232,19 +237,62 @@ while ($line = <FP>)
 
 	# $tc_data[0] contains test ID and $tc_data[1] contains Test Summary
 	$tc_short_title=get_tc_short_title($tc_data[0],$tc_data[1]);
-	$tc_title=$tc_data[1];
+	$tc_title = $tc_data[1];
+	$tmt_comp = $tc_data[9];
+	$tmt_testarea = $tc_data[10];
+
 	#print "\nTest case Short Title:$tc_short_title";# Test case Title:$tc_title";
 
 	$is_tc_available = 0;
 	$tc_short_title =~ m/^(\d+)_.+/;
 	$tc_id_csv = $1;
 	#print "\nCSV ID:$tc_id_csv";
+
+
+	############## Getting Component Id #####################################
+
+	$sql="select comp_id from component_info where comp_name=\'$tmt_comp\' and  ver_id=$ver_id"; 
+	$sth = $dbh->prepare($sql);
+	$sth->execute or die ("\ncould not execute component_info query.");
+	@result=$sth->fetchrow_array();
+	$sth->finish;
+	$comp_id=$result[0];
+	print "\nComponent Id:$comp_id";
+
+	die ("\nComponent name not found!") if ($comp_id eq "");
+
+	############## Getting Test Area Id #####################################
+
+	$sql="select ta_id from testarea_info where ta_name=\'$tmt_testarea\' and comp_id=$comp_id"; 
+	$sth = $dbh->prepare($sql);
+	$sth->execute or die ("\ncould not execute testarea_info query.");
+	@result=$sth->fetchrow_array();
+	$sth->finish;
+	$ta_id=$result[0];
+	print "\nTest Area Id: $ta_id";
+
+	die ("\nTest area name not found!") if ($ta_id eq "");
+
+	############## Get Existing Test Case List from database #############################################
+
+	$sql="select tc_id from testcase_info where auto_id in (select auto_id from component where ta_id = $ta_id ) order by tc_id"; 
+	$sth = $dbh->prepare($sql);
+	$sth->execute or die ("\ncould not execute testcase_info query.");
+	while (@result=$sth->fetchrow_array())
+	{
+		push (@tc_list,$result[0]);
+	}
+	$sth->finish;
+	#print "\nTest Case List: @tc_list";
+
+	############## Inserting New TCs #########################################
+
 	foreach $tc_db (@tc_list)
 	{
 			#Extracting initial Test case number from Test Short title
 			$tc_db =~ m/^(\d+)_.+/; 
 			$tc_id_db = $1;
-
+			
 			if ($tc_id_csv eq $tc_id_db)
 			{
 					$is_tc_available = 1;
@@ -260,6 +308,8 @@ while ($line = <FP>)
 	#Skipping test case insertion if TC is already available in TMT
 	next if ( $is_tc_available == 1);
 	
+	
+
 	############################# Test Case Insertion code ############################
 
 	$max_tc_id++;
