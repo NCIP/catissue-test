@@ -51,5 +51,7 @@ update catissue_password set update_date=CURRENT_DATE where user_id=(select IDEN
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='technician@washu.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='supervisor@washu.com');
 
+update catissue_user set activity_status='Active' where identifier=1;
+
 commit;
 quit;
