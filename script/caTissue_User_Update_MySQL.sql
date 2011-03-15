@@ -16,7 +16,6 @@ update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='supervisor@
 
 #CSM_User table updating to avoid password expiry feature
 
-REMARK "Upading date in CSM_USER
 update csm_user set update_date=CURRENT_DATE where login_name='admin@admin.com';
 update csm_user set update_date=CURRENT_DATE where login_name='admin@wustl.edu';
 update csm_user set update_date=CURRENT_DATE where login_name='supervisor@wustl.edu';
@@ -34,7 +33,6 @@ update csm_user set update_date=CURRENT_DATE where login_name='technician@washu.
 update csm_user set update_date=CURRENT_DATE where login_name='supervisor@washu.com';
 
 
-REMARK "Upading date in CATISSUE_PASSWORD
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin@admin.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin@wustl.edu');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='supervisor@wustl.edu');
