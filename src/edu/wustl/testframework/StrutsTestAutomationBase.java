@@ -54,12 +54,17 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 		try {
 			setUp();
 			runTest();
-			compareDataSets();
-			truncateAuditTables();
+			if(isToCompare())
+			{
+				compareDataSets();
+				truncateAuditTables();
+				result.endTest(this);
+			}
 		}
 		catch (AssertionFailedError e) { //1
 			exp=e.getMessage();
 			e.printStackTrace();
+			if(isToCompare())
 			result.addFailure(this, e);
 		}
 
@@ -69,17 +74,20 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			{
 				exp = e.toString();
 			}*/
+			if(isToCompare())
 			result.addError(this, e);
 		}
 		finally {
 			try
 			{
 				System.out.println("result Object: "+result.toString());
+				if(isToCompare())
 				TestCaseDataUtil.writeToFile(result,getName(),exp,dataObject);
 				tearDown();
 			}
 			catch(Exception e)
 			{
+				if(isToCompare())
 				result.addError(this, e);
 			}
 		}
@@ -100,13 +108,15 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			stmt = conn.createStatement();
 			while ((strLine = br.readLine()) != null)
 			{
-				stmt.addBatch(strLine);
+				stmt.execute(strLine);
 			}
-			stmt.executeBatch();
+			stmt.close();
+			conn.close();
 		}
 		catch (Exception e)
 		{
 			System.out.println("Unable to truncate audit tables.");
+			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 	}

@@ -6,7 +6,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.List;
 import java.util.Properties;
+
+import au.com.bytecode.opencsv.CSVReader;
 
 import junit.framework.TestResult;
 
@@ -102,10 +107,26 @@ public class TestCaseDataUtil
 			line.deleteCharAt(line.length()-1);
 			line.append("\n");
 			int failedTestCount = result.errorCount()+result.failureCount();
-			int passedTestCount = result.runCount()-failedTestCount;
-			int totalTestCount = result.runCount();
+			TestCaseDataUtil.getProperty("data.file.path");
+			File tempFile= new File(TestCaseDataUtil.getProperty("data.file.path"));
+			InputStream inputStream;
+
+				inputStream = new FileInputStream(tempFile);
+				CSVReader reader = null;
+				List<String[]> list = null;
+				reader = new CSVReader(new InputStreamReader(inputStream));
+				list = reader.readAll();
+				reader.close();
+				int size = list.size();
+				int totalTestCount = 0;
+				if(size>0)
+				{
+					totalTestCount = size-1;
+				}
+			int passedTestCount = totalTestCount-failedTestCount;
+//			int totalTestCount = result.runCount();
 			double passedPercent = (double)(passedTestCount*100)/(double)totalTestCount;
-			line.append("Fresh,"+result.runCount()+","+passedTestCount+","+failedTestCount+","+passedPercent);
+			line.append("Fresh,"+totalTestCount+","+passedTestCount+","+failedTestCount+","+passedPercent);
 			writer.append(line.toString());
 	}
 	catch (IOException ioExp)
