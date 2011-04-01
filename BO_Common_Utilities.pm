@@ -217,7 +217,7 @@ sub read_catissue_prop_file {
         elsif ( $line =~ /^(jboss.server.port=)/g ) {
             $jboss_server_port = $';
         }
-        elsif ( $line =~ /^(jboss.server.host=)/g ) {
+        elsif ( $line =~ /^(jboss.server.hostname=)/g ) {
             $jboss_server_host = $';
         }
         elsif ( $line =~ /^(jboss.container.secure=)/g ) {
@@ -647,7 +647,7 @@ sub initial_setup {
     #Writing initial Headers in Report (csv) file
     write_detail_report(
         $_[1],
-        "Test Id",
+        "TMT Id",
         "Test Summary",
         "Test Execution Status",
         "Time Taken (sec)",
