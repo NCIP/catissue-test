@@ -65,7 +65,10 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			exp=e.getMessage();
 			e.printStackTrace();
 			if(isToCompare())
-			result.addFailure(this, e);
+			{
+				result.addFailure(this, e);
+				truncateAuditTables();
+			}
 		}
 
 		catch (Throwable e) { // 2
