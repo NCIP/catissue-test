@@ -18,6 +18,7 @@ update CATISSUE_USER set FIRST_TIME_LOGIN=0 where EMAIL_ADDRESS='super@super.com
 update CATISSUE_USER set FIRST_TIME_LOGIN=0 where EMAIL_ADDRESS='tech@bjc.com';
 update CATISSUE_USER set FIRST_TIME_LOGIN=0 where EMAIL_ADDRESS='scientist@sci.com';
 update CATISSUE_USER set FIRST_TIME_LOGIN=0 where EMAIL_ADDRESS='custom@user.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=0 where EMAIL_ADDRESS='admin1@washu.com';
 
 #CSM_User table updating to avoid password expiry feature
 
@@ -42,6 +43,7 @@ update csm_user set update_date=CURRENT_DATE where login_name='super@super.com';
 update csm_user set update_date=CURRENT_DATE where login_name='tech@bjc.com';
 update csm_user set update_date=CURRENT_DATE where login_name='scientist@sci.com';
 update csm_user set update_date=CURRENT_DATE where login_name='custom@user.com';
+update csm_user set update_date=CURRENT_DATE where login_name='admin1@washu.com';
 
 REMARK "Upading date in CATISSUE_PASSWORD
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin@admin.com');
@@ -64,6 +66,7 @@ update catissue_password set update_date=CURRENT_DATE where user_id=(select IDEN
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='tech@bjc.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='scientist@sci.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='custom@user.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin1@washu.com');
 
 update catissue_user set activity_status='Active' where identifier=1;
 
