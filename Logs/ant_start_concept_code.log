@@ -1,0 +1,376 @@
+Buildfile: D:\caTIES\deid\build.xml
+
+run_concept_code_server:
+     [java] - Path of log4j properties file:D:\caTIES\deid\log4j.properties
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] Using C:\Documents and Settings\sarita_patel\gate.xml as user configuration file
+     [java] CREOLE plugin loaded: file:/D:/caTIES/concept_code/gate/gate_3_1/application/plugins/ANNIE/
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1 as GATE home
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\application\plugins as installed plug-ins directory.
+     [java] Using D:\caTIES\concept_code\gate\gate_3_1\gate.xml as site configuration file.
+     [java] gate.util.GateException: couldn't open creole.xml: java.io.FileNotFoundException: http://ps6177:8080/gate/gate_3_1/application/plugins/caTIES/creole.xml
+     [java] 	at gate.creole.CreoleRegisterImpl.registerDirectories(CreoleRegisterImpl.java:180)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.setUpCreoleRegister(TiesPipe.java:815)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.initializeTheController(TiesPipe.java:356)
+     [java] 	at edu.upmc.opi.caBIG.caTIES.services.caTIES_TiesPipe.TiesPipe.processMessage(TiesPipe.java:99)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.executeTiesPipeDirect(ConceptCoder.java:186)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.processPathologyReport(ConceptCoder.java:121)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCoder.process(ConceptCoder.java:81)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.processReports(ConceptCodeManager.java:263)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.startProcess(ConceptCodeManager.java:213)
+     [java] 	at edu.wustl.catissuecore.conceptcode.ConceptCodeManager.main(ConceptCodeManager.java:314)
+
+BUILD SUCCESSFUL
+Total time: 40 seconds

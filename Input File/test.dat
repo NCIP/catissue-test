@@ -1,0 +1,161 @@
+MSH|^~\&|CoPathPlus|X|caBIG||20060210135109||ORU^R01|1000000004399|P|2.3
+PID|1||172623239^^^CMH|tst8858394|TRAINING^KARA^M||19811007|F||W|||||||||172-62-3239|||||||||||N
+PV1|1||PATHOS||||^PLANET^VENUS||||||||||pmc77361^PLANET^VENUS|OSD|0002172623239|||||||||||||||||||||||||200510191442
+ORC|RE||PHS06-24^CoPathPlus||CM||||200602021148|z196^DEVINE^LISA||^PLANET^VENUS
+OBR|1||PHS06-24^CoPathPlus|PHSP^PH Surgical Pathology|||200602021147|||||||200602021147|SURGBX|||||^24^Y|-1|200602021400||SP|F|||||||^DJOKIC^MIROSLAV|^DJOKIC^MIROSLAV
+OBX|1|CE|ANT|tpmc4418183.1|SURGBX^Nasopharynx biopsy^L||||||F||1^1
+OBX|2|CE|ANT|tpmc4418183.2|ROLYM^Right Deep Cervical Node^L||||||F||2^2
+OBX|3|CE|ANT|tpmc4418183.3|CLNH^Pt. 2, Right Deep Cervical Node for Cytogenetics^L||||||F||3^3
+OBX|4|ST|BLOCK|tpmc4418183.1.1|A||||||||1^A|200602021148
+OBX|5|ST|BLOCK|tpmc4418183.2.2|ACMB/DNA||||||||1^ACMB/DNA|200602021148
+OBX|6|ST|BLOCK|tpmc4418183.2.3|BB+||||||||2^BB+|200602021148
+OBX|7|ST|BLOCK|tpmc4418183.2.4|C||||||||3^C|200602021148
+OBX|8|CE|PROCESS|tpmc4418183.1.1.1|$hinit^Initial H&E^L||||||||1^H&E|200602021148
+OBX|9|CE|PROCESS|tpmc4418183.2.2.2|$hinit^Initial H&E^L||||||||5^H&E|200602021148
+OBX|10|CE|PROCESS|tpmc4418183.2.2.3|pmc5553^HH&E (HISTO)^L||||||||6^HHE|200602021148
+OBX|11|CE|PROCESS|tpmc4418183.2.3.4|$hinit^Initial H&E^L||||||||6^H&E|200602021148
+OBX|12|CE|PROCESS|tpmc4418183.2.4.5|$hinit^Initial H&E^L||||||||7^H&E|200602021148
+OBX|13|CE|PROCESS|tpmc4418183.2.0.6|pmc0753^Touch Preparation (Surg)^L||||||||1|200602021148
+OBX|14|CE|PROCESS|tpmc4418183.2.0.7|pmc4653^Tissue Banked OCT Frozen (Surg)^L||||||||2|200602021148
+OBX|15|CE|PROCESS|tpmc4418183.2.0.8|pmc6553^CMB Tissue Prep (PHSP)^L||||||||3|200602021148
+OBX|16|CE|PROCESS|tpmc4418183.2.0.9|pmc1273^DNA Tissue Frozen (Surg)^L||||||||4^DNAFR|200602021148
+OBX|17|CE|PROCESS|tpmc4418183.2.0.10|pmc0534^Flow Cyto Tissue Prep (Surg)^L||||||||5^FLOWCY|200602021148
+OBX|18|CE|PROCESS|tpmc4418183.2.3.11|tst8525^B+ Fixation (Surg)^L||||||||7^B5|200602021148
+OBX|19|TX|GDT|tpmc4418183|The specimen is received fresh in two parts, both of which are identified with the patient' s name initials (CS) and medical record number.  \.br\\.br\Part 1 is labeled "nasal pharynx biopsy" and consists of tiny fragments of soft, white-tan tissue, measuring in aggregate 0.6 x 0.5 x 0.2 cm.  The entire specimen is submitted in a tea bag in cassette 1A.\.br\\.br\Part 2 is labeled "deep cervical node" and consists of a hemorrhagic, fleshy, 2.4 x 1.9 x 0.8 cm lymph node.  On cut section the node has a 0.3 cm firm, white nodule.  Touch preparations are performed.  Material is snap frozen (two blocks), sent for cell suspension immunophenotypic studies (flow cytometry), and sent to the Molecular Diagnostics Laboratory with an adjacent section submitted in formalin fixative labeled 2A (CMB/DNA).  Additional material is sent for cytogenetic studies.  The remainder (representative sections) of the lymph node is submitted in cassettes 2BB+ after B+ fixation and in Block 2C (2C has nodule) after formalin fixation.\.br\CH/ncs\.br\||||||F
+OBX|20|TX|MDT|tpmc4418183|Part 1 features nasopharyngeal mucosa with a thick basement membrane and a lymphoid infiltrate that primarily consists of small, mature-appearing lymphocytes with some transformed large cells.  There are also scattered eosinophils present, as well as focal plasma cells and edema.\.br\\.br\Part 2 consists of a lymph node with hyperplastic follicles varying in size and demonstrating polarity.  Between the follicles are expanded T-zone nodules; no melanin pigment is identified.\.br\||||||F
+OBX|21|TX|FIN|tpmc4418183|PART 1: SOFT TISSUE, NASOPHARYNX, ENDOSCOPIC BIOPSY\.br\NASOPHARYNGEAL MUCOSA WITH CHRONIC INFLAMMATION\.br\\.br\PART 2: LYMPH NODE, RIGHT DEEP CERVICAL, EXCISION\.br\REACTIVE LYMPHOID HYPERPLASIA, COMBINED FOLLICULAR AND PARACORTICAL TYPE (see comment).\.br\||||||F
+OBX|22|CE|IMP|tpmc4418183|M43000^^SNO||||||||1||A
+OBX|23|CE|IMP|tpmc4418183|P1140^^SNO||||||||1||A
+OBX|24|CE|IMP|tpmc4418183|T1X000^^SNO||||||||1||A
+OBX|25|CE|IMP|tpmc4418183|T23000^^SNO||||||||1||A
+OBX|26|CE|IMP|tpmc4418183|T23010^^SNO||||||||1||A
+OBX|27|CE|IMP|tpmc4418183|M72200^^SNO||||||||1||A
+OBX|28|CE|IMP|tpmc4418183|P1100^^SNO||||||||1||A
+OBX|29|CE|IMP|tpmc4418183|T08200^^SNO||||||||1||A
+OBX|30|CE|IMP|tpmc4418183|V65.9^^ICD||||||||1
+OBR|2||tpmc4418183^CoPathPlus^tpmc4418183.P1|CG^Cytogenetics||||||||||200602021148|||||||1|200602021148||SP|F|||||||987654^PATHOID^DOCTOR|987654^PATHOID^DOCTOR
+OBX|1|TX|PIN|tpmc4418183|This specimen was cultured and harvested, but cytogenetic analysis was not carried out due to cancellation of the test by Dr. Fiona Craig on 2/1/2006.\.br\||||||F
+
+
+MSH|^~\&|CoPathPlus|X|caBIG||20060210135109||ORU^R01|1000000004362|P|2.3
+PID|1||112233465^^^RY|tpmc2480494|TESTVTWOFIVE^MAURICE||19680806|F||W|||||||||112-32-3456|||||||||||N
+PV1|1||ZLAB||||505079^PLANET^PLUTO|505073^PLANET^EARTH|||||||||pmc48361^PLANET^PLUTO|SV|0234561234567|||||||||||||||||||||||||200511210804
+ORC|RE||HHS05-8^CoPathPlus||CM||||200511281314|^HANNA^REGINA||505079^PLANET^PLUTO
+OBR|1||HHS05-8^CoPathPlus|^HH Histology|||200511281313|||||||200511281313||505079||||^77^Y|-1|200512201222||SP|C|||||||987654^PATHOID^DOCTOR|987654^PATHOID^DOCTOR
+OBX|1|CE|ANT|tpmc5657183.1|^Left Nasal Tip - Frozen SectioN^L||||||C||1^1
+OBX|2|CE|ANT|tpmc5657183.2|^Lesion of Left Nasal Tip^L||||||C||2^2
+OBX|3|ST|BLOCK|tpmc5657183.1.1|A||||||||1^A|200601132338
+OBX|4|ST|BLOCK|tpmc5657183.2.2|A||||||||1^A|200601132338
+OBX|5|ST|BLOCK|tpmc5657183.1.3|B||||||||2^B|200601132338
+OBX|6|CE|PROCESS|tpmc5657183.1.1.1|$hinit^Initial H&E^L||||||||1^H&E|200512191416
+OBX|7|CE|PROCESS|tpmc5657183.2.2.2|$hinit^Initial H&E^L||||||||1^H&E|200512191416
+OBX|8|CE|PROCESS|tpmc5657183.1.1.3|pmc5044^Frozen Section Initial Slide (HH)^L||||||||2^FS|200512191416
+OBX|9|TX|GDT|tpmc5657183|\.br\The specimen is received fresh for frozen section in one part (Part 1) and in buffered formalin in one part (Part 2).  The part is identified with the patient's name and initials S.B.\.br\\.br\Part 1:  Received labeled "lesion of left nasal tip of nose with a stitch identifying the 12 o'clock margin".  It consists of a pale pink-tan oval portion of skin with a stitch at 12 o'clock and measuring from 12 o'clock to 6 o'clock 1.4 cm, 3 o'clock to 9 o'clock 1.0 cm, and 0.7 in thickness.  The surface of the skin is dome-shaped and remarkable for a brown-black pigmented plaque-like area measuring 1.0 cm in diameter with its broadest dimension in the 12 to 6 o'clock dimension.  The 12 o'clock to 3 o'clock, 6 o'clock margin is inked blue.  The 12 o'clock, 9 o'clock, 6 o'clock margin is inked in yellow.  The 12 o'clock tip is additionally inked in red and the 6 o'clock tip in green.  The tissue is sectioned and submitted in its entirety for frozen section.\.br\1AFS  12 o'clock and 6 o'clock tips\.br\1BFS  mid portion\.br\\.br\Part 2:  is labeled "lesion left nasal tip" and per discussion with Dr. Valeri Roth is a portion of deeper specimen from 3 to 6 o'clock aspect with ink on the new deep resection margin.  The previously inked margin is re-inked with blue ink.  The specimen overall measures 1.0 x 0.5 x 0.2 cm in depth.  The tissue after sectioning is submitted in its entirety in cassette 2A.\.br\2A  Toto  \.br\||||||C
+OBX|10|TX|MDT|tpmc5657183|Microscopic examination substantiates the diagnosis indicated above.\.br\||||||C
+OBX|11|TX|FIN|tpmc5657183|PART 1: LEFT NOSE, LESION, EXCISIONAL BIOPSY FOR FROZEN SECTION-\.br\A.          MALIGNANT.\.br\B.          BASAL CELL CARCINOMA.\.br\C.     MARGINS FREE OF TUMOR.\.br\\.br\PART 2: SKIN, LEFT NOSE, EXCISIONAL BIOPSY-\.br\     BASAL CELL CARCINOMA WITH SQUAMOUS DIFFERENTIATION, COMPLETELY EXCISED (see comment).\.br\||||||C
+OBX|12|CE|IMP|tpmc5657183|M09400^^SNO||||||||1||A
+OBX|13|CE|IMP|tpmc5657183|M80903^^SNO||||||||1||A
+OBX|14|CE|IMP|tpmc5657183|P1141^^SNO||||||||1||A
+OBX|15|CE|IMP|tpmc5657183|T21000^^SNO||||||||1||A
+OBX|16|CE|IMP|tpmc5657183|M80703^^SNO||||||||1||A
+OBX|17|CE|IMP|tpmc5657183|P1100^^SNO||||||||1||A
+OBX|18|CE|IMP|tpmc5657183|T02140^^SNO||||||||1||A
+OBX|19|CE|IMP|tpmc5657183|000^^ICD||||||||1
+OBR|2||tpmc5657183^CoPathPlus^tpmc5657183.A2|ADD^Addendum||||||||||200512201133|||||||2|200512201133||SP|F|||||||987654^PATHOID^DOCTOR|987654^PATHOID^DOCTOR
+OBX|1|TX|ADX|tpmc5657183|See additional information in special procedures section.\.br\||||||C
+OBR|3||tpmc5657183^CoPathPlus^tpmc5657183.P1|PRE^Provisional Report||||||||||200512201037|||||||1|200512201037||SP|F|||||||987654^PATHOID^DOCTOR|987654^PATHOID^DOCTOR
+
+MSH|^~\&|CoPathPlus|X|caBIG||20060210135109||ORU^R01|1000000004363|P|2.3
+PID|1||001202123^^^RY|tst8948394|INTEGRATION^PCOONE||20050801|F||4|137 TEMPORARY WAY^^PITTSBURGH^PA^15213^United States||4123231234||||||301-36-1234|||||||||||N
+PV1|1||CHRHEU||||C030007^ROSEN^PAUL||||||||||pmc82543^ROSEN^PAUL|CHO|1021253859|||||||||||||||||||||||||200508291532
+ORC|RE||CHS05-9^CoPathPlus||CM||||200508301444|z40^KOKAL^ELLEN||C030007^ROSEN^PAUL
+OBR|1||CHS05-9^CoPathPlus|^CHP Histology|||200508300000|||||||200508301436|CAIBX|C030007||||^29^D|-1|200508301446||SP|F|||||||C006429^JAFFE^RONALD|z40^KOKAL^ELLEN
+OBX|1|CE|ANT|tst8627183.1|CAIBX^Allograft ileal biopsy^L||||||F||1^1
+OBX|2|TX|GDT|tst8627183|The specimen is received in formalin, labeled with the patient's name, and is designated "allograft ileal biopsy."  It consists of two pieces of pink-tan and glistening mucosa, which measure 0.2 cm in diameter.  The specimen is entirely submitted in cassette 1A.\.br\||||||F
+OBX|3|TX|MDT|tst8627183|Sections demonstrate two pieces of small bowel with preserved villous and crypt architecture.  Crypts are adequate in number for evaluation. There is no increase in crypt apoptosis. The surface epithelium is intact without ulceration or viral inclusions.  The lamina propria is normocellular with few of plasma cells, few lymphocytes, and scattered eosinophils. \.br\\.br\The case was discussed with Dr. Soltys and the transplant team on 08/03/05.\.br\||||||F
+OBX|4|TX|FIN|tst8627183|Allograft ileal biopsy (second allograft, 2 months): \.br\NO EVIDENCE OF ACUTE CELLULAR REJECTION OR VIRAL INCLUSIONS.\.br\MILD STROMAL CHANGES WITH EOSINOPHILIA. \.br\\.br\My signature is attestation that I have personally reviewed the submitted material(s) and the final diagnosis reflects that evaluation.\.br\||||||F
+OBX|5|CE|IMP|tst8627183|E0004^^SNO||||||||1||A
+OBX|6|CE|IMP|tst8627183|M77600^^SNO||||||||1||A
+OBX|7|CE|IMP|tst8627183|P1140^^SNO||||||||1||A
+OBX|8|CE|IMP|tst8627183|T65200^^SNO||||||||1||A
+
+MSH|^~\&|CoPathPlus|X|caBIG||20060210135109||ORU^R01|1000000004365|P|2.3
+PID|1||2222222^^^RY|tst0704394|FLINTSTONE^FRED^F||19560102|M|||||||||||222-22-2222|||||||||||N
+PV1|1||D1022^102-2||||505073^PLANET^EARTH||||||||||pmc87361^PLANET^EARTH|I|1234222222222|||||||||||||||||||||||||200503151511
+ORC|RE||BDS05-10^CoPathPlus||CM||||200505111355|^LASSIGE^KAREN||505073^PLANET^EARTH
+OBR|1||BDS05-10^CoPathPlus|^BD Histology|||200505111352|||||||200505111352|LUNL|505073||||^49^Y|-1|200508121504||SP|F|||||||987654^PATHOID^DOCTOR|987654^PATHOID^DOCTOR
+OBX|1|CE|ANT|tst4396183.1|LUNL^Right Upper Lobe for FS^L||||||F||1^1
+OBX|2|ST|BLOCK|tst4396183.1.1|A||||||||1^A|200508311407
+OBX|3|ST|BLOCK|tst4396183.1.2|B||||||||2^B|200508311407
+OBX|4|ST|BLOCK|tst4396183.1.3|C||||||||3^C|200508311407
+OBX|5|ST|BLOCK|tst4396183.1.4|D||||||||4^D|200508311407
+OBX|6|ST|BLOCK|tst4396183.1.5|E||||||||5^E|200508311407
+OBX|7|ST|BLOCK|tst4396183.1.6|F||||||||6^F|200508311407
+OBX|8|ST|BLOCK|tst4396183.1.7|G||||||||7^G|200508311407
+OBX|9|ST|BLOCK|tst4396183.1.8|H||||||||8^H|200508311407
+OBX|10|CE|PROCESS|tst4396183.1.1.1|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|11|CE|PROCESS|tst4396183.1.2.2|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|12|CE|PROCESS|tst4396183.1.3.3|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|13|CE|PROCESS|tst4396183.1.4.4|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|14|CE|PROCESS|tst4396183.1.5.5|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|15|CE|PROCESS|tst4396183.1.6.6|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|16|CE|PROCESS|tst4396183.1.7.7|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|17|CE|PROCESS|tst4396183.1.8.8|$hinit^Initial H&E^L||||||||1^H&E|200505131524
+OBX|18|TX|GDT|tst4396183|The specimen is identified as "right upper lobe".  Received is a 150-gram right upper lung lobectomy, 12.0 x 12.0 x 4.5 cm.  The pleural surface is soft, smooth and tan-pink to focally anthracotic.  The bronchial and vascular surgical resection margins are patent and grossly unremarkable.  On cross section, the parenchyma cut surfaces demonstrate a poorly circumscribed, 3.5 x 3.2 x 3.0 cm gray-tan focally anthracotic solid, firm mass, situated 2.5 cm from the bronchial resection margin and 1.0 cm from the closest overlying pleural surface.  A representative portion of the mass is frozen for intraoperative diagnostic evaluation and representative tissue is also taken for Oncotech Laboratory.  The pleura overlying the mass is marked with blue ink.  The remainder of the cut surfaces show tan-pink, spongy parenchyma with patent vasculature and bronchi.  The following sections are submitted:\.br\A  frozen section portion\.br\B  parabronchial lymph nodes\.br\C  bronchial resection margin\.br\D  vascular resection margin\.br\E-G  mass in relation to overlying pleura\.br\H  mass and adjacent bronchus\.br\I/J  representative remainder of lung parenchyma.\.br\\.br\||||||F
+OBX|19|TX|MDT|tst4396183|     SYNOPTIC DATA - PRIMARY LUNG TUMORS\.br\TUMOR LOCATION:      Left Upper Lobe\.br\LUNG SEGMENT(S) INVOLVED:      Anterior\.br\PROCEDURE:      Lobectomy\.br\TUMOR SIZE:      Maximum dimension:  5.2 cm\.br\     Minor dimension: 3.2 cm\.br\GROSS SATELLITES:      Number of gross satellite lesions: 2\.br\TUMOR TYPE:      Invasive adenocarcinoma\.br\HISTOLOGIC GRADE:      G2, Moderately differentiated\.br\EXTRAPULMONARY PARENCHYMAL\.br\EXTENSION/INVASION OF TUMOR:      None identified\.br\ANGIOLYMPHATIC INVASION:      Yes\.br\TUMOR NECROSIS:      < or = to 50%\.br\SURGICAL MARGIN INVOLVEMENT:      No\.br\SURGICAL MARGIN SITE:      Distance of invasive tumor to closest margin: 12.0 mm\.br\INFLAMMATORY(DESMOPLASTIC) REACTION:      Mild\.br\N1 LYMPH NODES:      Number of N1 lymph nodes positive:: 0\.br\     Number of N1 lymph nodes examined: 3\.br\EXTRACAPSULAR SPREAD OF N1 METASTASES:      No\.br\N2 LYMPH NODES:      Number of N2 lymph nodes positive: 0\.br\     Number of N2 lymph nodes examined: 4\.br\EXTRACAPSULAR SPREAD OF N2 METASTASES:      No\.br\UNDERLYING DISEASE(S):      Bronchiectasis\.br\T STAGE, PATHOLOGIC:      pT2\.br\N STAGE, PATHOLOGIC:      pN0\.br\M STAGE, PATHOLOGIC:      pMX\.br\ANCILLARY STUDIES:      FISH studies\.br\--------------------------------------------------------\.br\Microscopic examination substantiates the above diagnosis.  Elastic stain highlights intact visceral pleura.  Mucin, PAS and PAS with diastase are positive.  Trichrome and Grocott stains are negative.\.br\\.br\Additional micro text............................................  \.br\||||||F
+OBX|20|TX|FIN|tst4396183|PART 1, LUNG, LOBECTOMY:\.br\A.          MALIGNANT\.br\B.     INVASIVE ADENOCARCINOMA\.br\C.     NO INVOLVEMENT OF SURGICAL MARGINS\.br\D.     6 LYMPH NODES NEGATVE FOPR TUMOR\.br\||||||F
+OBX|21|CE|IMP|tst4396183|M81403^^SNO||||||||1||A
+OBX|22|CE|IMP|tst4396183|P1100^^SNO||||||||1||A
+OBX|23|CE|IMP|tst4396183|T08000^^SNO||||||||1||A
+OBX|24|CE|IMP|tst4396183|T28000^^SNO||||||||1||A
+OBX|25|CE|IMP|tst4396183|285.9^^ICD||||||||1
+
+MSH|^~\&|CoPathPlus|X|caBIG||20060210135109||ORU^R01|1000000004405|P|2.3
+PID|1||999999998^^^RY|tst8046394|MOUSE^MORTIMER^M||19300415|M|||||||||||999-99-9998|||||||||||N
+PV1|1||RSDY||||999002231^PARK^ANDREW||||||||||pmc30122^PARK^ANDREW|SY2|0002999999998|||||||||||||||||||||||||200504260847
+ORC|RE||BDS05-28^CoPathPlus||CM||||200505111710|^LASSIGE^KAREN||999002231^PARK^ANDREW
+OBR|1||BDS05-28^CoPathPlus|^BD Histology|||200505111709|||||||200505111709|TURP|999002231||||^75^Y|-1|200505260848||SP|F|||||||987654^PATHOID^DOCTOR|z491^NESTLER^RICK
+OBX|1|CE|ANT|tst2596183.1|TURP^Prostate, Radical Prostatectomy^L||||||F||1^1
+OBX|2|ST|BLOCK|tst2596183.1.1|A||||||||1^A|200508311407
+OBX|3|ST|BLOCK|tst2596183.1.2|B||||||||2^B|200508311407
+OBX|4|ST|BLOCK|tst2596183.1.3|C||||||||3^C|200508311407
+OBX|5|ST|BLOCK|tst2596183.1.4|D||||||||4^D|200508311407
+OBX|6|ST|BLOCK|tst2596183.1.5|E||||||||5^E|200508311407
+OBX|7|ST|BLOCK|tst2596183.1.6|F||||||||6^F|200508311407
+OBX|8|ST|BLOCK|tst2596183.1.7|G||||||||7^G|200508311407
+OBX|9|ST|BLOCK|tst2596183.1.8|H||||||||8^H|200508311407
+OBX|10|ST|BLOCK|tst2596183.1.9|I||||||||9^I|200508311407
+OBX|11|ST|BLOCK|tst2596183.1.10|J||||||||10^J|200508311407
+OBX|12|ST|BLOCK|tst2596183.1.11|K||||||||11^K|200508311407
+OBX|13|ST|BLOCK|tst2596183.1.12|L||||||||12^L|200508311407
+OBX|14|ST|BLOCK|tst2596183.1.13|M||||||||13^M|200508311407
+OBX|15|ST|BLOCK|tst2596183.1.14|N||||||||14^N|200508311407
+OBX|16|ST|BLOCK|tst2596183.1.15|O||||||||15^O|200508311407
+OBX|17|ST|BLOCK|tst2596183.1.16|P||||||||16^P|200508311407
+OBX|18|ST|BLOCK|tst2596183.1.17|Q||||||||17^Q|200508311407
+OBX|19|ST|BLOCK|tst2596183.1.18|R||||||||18^R|200508311407
+OBX|20|CE|PROCESS|tst2596183.1.1.1|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|21|CE|PROCESS|tst2596183.1.2.2|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|22|CE|PROCESS|tst2596183.1.3.3|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|23|CE|PROCESS|tst2596183.1.4.4|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|24|CE|PROCESS|tst2596183.1.5.5|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|25|CE|PROCESS|tst2596183.1.6.6|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|26|CE|PROCESS|tst2596183.1.7.7|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|27|CE|PROCESS|tst2596183.1.8.8|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|28|CE|PROCESS|tst2596183.1.9.9|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|29|CE|PROCESS|tst2596183.1.10.10|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|30|CE|PROCESS|tst2596183.1.11.11|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|31|CE|PROCESS|tst2596183.1.12.12|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|32|CE|PROCESS|tst2596183.1.13.13|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|33|CE|PROCESS|tst2596183.1.14.14|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|34|CE|PROCESS|tst2596183.1.15.15|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|35|CE|PROCESS|tst2596183.1.16.16|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|36|CE|PROCESS|tst2596183.1.17.17|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|37|CE|PROCESS|tst2596183.1.18.18|$hinit^Initial H&E^L||||||||1^H&E|200508311427
+OBX|38|TX|GDT|tst2596183|The specimen is labeled with the patient' s name and "prostate".  It is received in formalin.  It consists of a slightly irregular prostate gland with attached bilateral seminal vesicles and short vasa deferentia.  The seminal vesicles are removed.  The prostate measures 4.4 x 4.0 x 3.5 cm and weighs 28.0 grams.  The external surface is pink to tan, irregular with fibrous adhesions.  Margins are stained as follows:  Bladder neck yellow dye, anterior wall blue dye, apex red dye, urethral margin red dye, posterior wall black dye, right lateral green dye, left lateral orange dye.  The prostate is serially sectioned.  Sections show a mottled yellowish-gray cut surface firm in the left lobe.  The seminal vesicles are lobulated, pink to tan, moderately firm, the right measuring 3.0 x 1.4 x 1.0 cm and the left 2.5 x 1.5 x 0.8 cm.  The vasa deferentia with attached clamps measure 0.5 cm in length x 0.4 cm in diameter.  Representative sections are submitted as follows:\.br\A x two  right bladder neck\.br\B  x two  left bladder neck\.br\C  x one  right anterior wall\.br\D  x one  left anterior wall\.br\E  x two  right apex\.br\F  x two  left apex\.br\G  urethral margin\.br\H  x two  right posterior wall\.br\I  x two  left posterior wall\.br\J  x two  right lateral\.br\K  x two  left lateral\.br\L  M x two  right lobe\.br\N - O  x two  left lobe\.br\P  x two - right seminal base\.br\Q  x two  left seminal vesicle base.\.br\BM/ncs\.br\||||||F
+OBX|39|TX|MDT|tst2596183|     Large tumor\.br\SYNOPTIC DATA - PRIMARY PROSTATE TUMORS\.br\CLINICAL DATA:      PSA value: 28\.br\INVASIVE CA IDENTIFIED?:      Yes\.br\TUMOR HISTOLOGY:      Adenocarcinoma NOS\.br\PRIMARY GLEASON GRADE:      0\.br\SECONDARY GLEASON GRADE:      0\.br\GLEASON SUM SCORE:      0\.br\GLEASON 4/5 PERCENTAGE:      1%\.br\WEIGHT OF PROSTATE:      89gm\.br\TUMOR SIZE:      Maximum dimension:  2 cm\.br\LOBE LATERALITY:      Right Lobe\.br\PERCENT OF SPECIMEN INVOLVED BY TUMOR:      < 5% of specimen involved by invasive tumor\.br\MULTIFOCAL DISEASE:      Yes\.br\HIGH GRADE PIN:      Yes - NOS\.br\EXTRAPROSTATIC EXTENSION:      Yes - Multifocal\.br\PERINEURAL INVASION:      No\.br\ANGIOLYMPHATIC INVASION:      No\.br\SEMINAL VESICLE INVASION:      Yes\.br\SURGICAL MARGIN INVOLVEMENT:      All surgical margins free of tumor\.br\LYMPH NODES EXAMINED:      0\.br\LYMPH NODES POSITIVE:      0\.br\EXTRANODAL EXTENSION:      Yes\.br\SIZE OF NODAL METASTASIS:      0mm\.br\T STAGE, PATHOLOGIC:      pT2\.br\N STAGE, PATHOLOGIC:      pN1\.br\M STAGE, PATHOLOGIC:      pM1\.br\HISTOLOGIC GRADE:      GX, Grade cannot be assessed\.br\--------------------------------------------------------\.br\ \.br\\.br\||||||F
+OBX|40|TX|FIN|tst2596183|Part #1 Prostate Gland\.br\||||||F
+OBX|41|CE|IMP|tst2596183|T77100^^SNO||||||||1||A
+OBX|42|CE|IMP|tst2596183|196.3^^ICD||||||||1
+
+FTS|442

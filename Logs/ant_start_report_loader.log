@@ -1,0 +1,7 @@
+Buildfile: D:\caTIES\report_loader\build.xml
+
+run_report_loader_server:
+     [java] - Path of log4j properties file:D:\caTIES\report_loader\log4j.properties
+
+BUILD SUCCESSFUL
+Total time: 12 seconds

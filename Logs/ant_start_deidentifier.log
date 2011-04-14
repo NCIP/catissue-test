@@ -1,0 +1,7 @@
+Buildfile: D:\caTIES\deid\build.xml
+
+run_deidentifier_server:
+     [java] - Path of log4j properties file:D:\caTIES\deid\log4j.properties
+
+BUILD SUCCESSFUL
+Total time: 1 minute 10 seconds
