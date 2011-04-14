@@ -1,0 +1,2 @@
+TestId,QuerySummary,username,password,queryxmlname,templateName,operation,Expected Result,Expected Message 
+001,Return Molecular specimens available in a collection protocol = 'CP Prostate Cancer',scientist@catissue.com,sci!@#,Query1.xml,,,Pass,

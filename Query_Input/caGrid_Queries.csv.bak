@@ -1,0 +1,2 @@
+TestId,QuerySummary,username,password,queryxmlname,templateName,operation,Expected Result,Expected Message 
+001,Return Molecular specimens available in a collection protocol = 'CP Prostate Cancer',Pmehta,Pspl!@#456,Query1.xml,,,Pass,

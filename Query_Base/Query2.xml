@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CQLQueryResultCollection targetClassname="edu.wustl.catissuecore.domain.MolecularSpecimen" xsi:type="CQLQueryResults" xmlns:ns1="http://CQL.caBIG/1/gov.nih.nci.cagrid.CQLResultSet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="12.0" lineage="New" pathologicalStatus="Not Specified" specimenClass="Molecular" specimenType="DNA" id="3026" label="Specimen1_to_be_tested" barcode="607" activityStatus="Active" isAvailable="true" createdOn="2010-11-30T00:00:00.000-06:00" collectionStatus="Collected" availableQuantity="12.0" xmlns:ns2="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="12.0" lineage="Derived" pathologicalStatus="Not Specified" specimenClass="Molecular" specimenType="DNA" id="3101" label="614" barcode="623" activityStatus="Active" isAvailable="true" createdOn="2010-12-01T00:00:00.000-06:00" collectionStatus="Collected" availableQuantity="12.0" xmlns:ns3="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="10.0" lineage="New" pathologicalStatus="Malignant" specimenClass="Molecular" specimenType="DNA" id="1845" label="upadated TS1291026776888" barcode="specimen with barcode1291026775851" activityStatus="Active" isAvailable="true" createdOn="1975-08-15T00:00:00.000-05:00" collectionStatus="Collected" availableQuantity="10.0" concentrationInMicrogramPerMicroliter="10.0" xmlns:ns4="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="10.0" lineage="New" pathologicalStatus="Malignant" specimenClass="Molecular" specimenType="DNA" id="2172" label="Molecular Specimen1291026817355" barcode="MolSpecBarcode1291026817355" activityStatus="Active" isAvailable="true" createdOn="1975-08-15T00:00:00.000-05:00" collectionStatus="Pending" availableQuantity="10.0" concentrationInMicrogramPerMicroliter="10.0" xmlns:ns5="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="1.0" lineage="Derived" pathologicalStatus="Not Specified" specimenClass="Molecular" specimenType="DNA" id="3048" barcode="612" activityStatus="Active" isAvailable="false" collectionStatus="Pending" availableQuantity="0.0" concentrationInMicrogramPerMicroliter="1.0" xmlns:ns6="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="10.0" lineage="New" pathologicalStatus="Malignant" specimenClass="Molecular" specimenType="DNA" id="373" label="upadated TS1291025831068" barcode="specimen with barcode1291025829863" activityStatus="Active" isAvailable="true" createdOn="1975-08-15T00:00:00.000-05:00" collectionStatus="Collected" availableQuantity="10.0" concentrationInMicrogramPerMicroliter="10.0" xmlns:ns7="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+ <ObjectResult xsi:type="CQLObjectResult">
+  <MolecularSpecimen initialQuantity="10.0" lineage="New" pathologicalStatus="Malignant" specimenClass="Molecular" specimenType="DNA" id="701" label="Molecular Specimen1291025871304" barcode="MolSpecBarcode1291025871304" activityStatus="Active" isAvailable="true" createdOn="1975-08-15T00:00:00.000-05:00" collectionStatus="Pending" availableQuantity="10.0" concentrationInMicrogramPerMicroliter="10.0" xmlns:ns8="gme://caCORE.caCORE/3.2/edu.wustl.catissuecore.domain"/>
+ </ObjectResult>
+</CQLQueryResultCollection>

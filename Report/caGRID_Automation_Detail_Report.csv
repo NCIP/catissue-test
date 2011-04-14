@@ -1,0 +1,4 @@
+Test Id , QueryName , Query Summary, Query Execution Status,Result Verification, Logs
+001, Query1.xml, Return Molecular specimens available in a collection protocol = 'CP Prostate Cancer',  , null, 
+Test Id , QueryName , Query Summary, Query Execution Status,Result Verification, Logs
+001, Query1.xml, Return Molecular specimens available in a collection protocol = 'CP Prostate Cancer',  , null, 

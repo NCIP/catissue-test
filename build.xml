@@ -1,0 +1,56 @@
+<?xml version ="1.0"?>
+
+<!--Ant Script for Selenium Test Execution -->
+
+<project name="caGrid_Automation" default="" basedir=".">
+
+
+	<property name="base.dir" value="." />
+	<property name="classes.dir" value="./Classes" />
+	<property name="lib.dir" value="./lib" />
+	<property name="src.dir" value="./src" />
+
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="lib/ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+
+	
+	<!-- COMPILE TESTS-->
+	<path id="cpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<!-- <fileset dir="${lib.dir}/lib">
+			<include name="**/*.jar" />
+		</fileset>-->
+	</path>
+
+	<!-- =================================================================== -->
+	<!-- Compile -->
+	<!-- =================================================================== -->
+
+	<target name="compile" description="Compile">
+		<delete includeemptydirs="true">
+		    <fileset dir="${classes.dir}" includes="**/*.*" defaultexcludes="false"/>
+		  </delete>
+		<javac debug="true" source="1.5" classpathref="cpath" destdir="${classes.dir}">
+			<src path="${src.dir}" />
+		</javac>
+	</target>
+
+	
+	<!-- =================================================================== -->
+	<!-- caGrid -->
+	<!-- =================================================================== -->
+
+	<target name="Run_caGrid_Queries" depends="compile" description="Run caGrid">
+	  <java fork="true" failonerror="yes" classname="caGRID_Automation" classpath="classes.dir">  
+	      <arg line=""/>
+	    </java>
+	  </target>
+
+</project>
+
+
