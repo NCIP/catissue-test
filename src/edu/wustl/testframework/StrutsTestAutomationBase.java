@@ -53,11 +53,11 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 
 		try {
 			setUp();
+			truncateAuditTables();
 			runTest();
 			if(isToCompare())
 			{
 				compareDataSets();
-				truncateAuditTables();
 				result.endTest(this);
 			}
 		}
@@ -84,6 +84,7 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			try
 			{
 				System.out.println("result Object: "+result.toString());
+				truncateAuditTables();
 				if(isToCompare())
 				TestCaseDataUtil.writeToFile(result,getName(),exp,dataObject);
 				tearDown();
@@ -108,13 +109,18 @@ public class StrutsTestAutomationBase extends MockStrutsTestCase
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			String strLine;
 			conn= DBUnitUtility.getConnection();
+			System.out.println("connection:   "+ conn);
 			stmt = conn.createStatement();
+			System.out.println("statement : "+ stmt.toString());
 			while ((strLine = br.readLine()) != null)
 			{
+				System.out.println("strLine  :  "+ strLine);
 				stmt.execute(strLine);
+				System.out.println("strLine  :  "+ strLine);
 			}
+
 			stmt.close();
-			conn.close();
+//			conn.close();
 		}
 		catch (Exception e)
 		{
