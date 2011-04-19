@@ -19,6 +19,13 @@ update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='tech@bjc.co
 update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='scientist@sci.com';
 update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='custom@user.com';
 update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='admin1@washu.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='admin_ltp@gmail.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='superv_pra@superv.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='sci_pra@sci.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='tech_pra@tech.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='sup_ltp@gmail.com';
+update CATISSUE_USER set FIRST_TIME_LOGIN=false where EMAIL_ADDRESS='tech_ltp@gmail.com';
+
 
 #CSM_User table updating to avoid password expiry feature
 
@@ -43,6 +50,11 @@ update csm_user set update_date=CURRENT_DATE where login_name='tech@bjc.com';
 update csm_user set update_date=CURRENT_DATE where login_name='scientist@sci.com';
 update csm_user set update_date=CURRENT_DATE where login_name='custom@user.com';
 update csm_user set update_date=CURRENT_DATE where login_name='admin1@washu.com';
+update csm_user set update_date=CURRENT_DATE where login_name='admin_ltp@gmail.com';
+update csm_user set update_date=CURRENT_DATE where login_name='superv_pra@superv.com';
+update csm_user set update_date=CURRENT_DATE where login_name='sci_pra@sci.com';
+update csm_user set update_date=CURRENT_DATE where login_name='sup_ltp@gmail.com';
+update csm_user set update_date=CURRENT_DATE where login_name='tech_ltp@gmail.com';
 
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin@admin.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin@wustl.edu');
@@ -65,6 +77,12 @@ update catissue_password set update_date=CURRENT_DATE where user_id=(select IDEN
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='scientist@sci.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='custom@user.com');
 update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin1@washu.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='admin_ltp@gmail.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='superv_pra@superv.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='sci_pra@sci.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='tech_pra@tech.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='sup_ltp@gmail.com');
+update catissue_password set update_date=CURRENT_DATE where user_id=(select IDENTIFIER from CATISSUE_USER where login_name='tech_ltp@gmail.com');
 
 update catissue_user set activity_status='Active' where identifier=1;
 
