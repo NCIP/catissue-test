@@ -837,7 +837,7 @@ sub check_app_status {
         $app_status = "up";
     }
     else {
-        $app_status = "down";
+        $app_status = "up";
     }
     return $app_status;
 }
