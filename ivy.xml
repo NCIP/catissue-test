@@ -1,0 +1,746 @@
+<ivy-module version="1.0">
+  <info organisation="ncicb"
+        module="catissuesuite_gridtest" />
+  <configurations>
+    <conf name="default" />
+    <conf name="compile" />
+    <conf name="runtime" extends="compile"/>
+    <conf name="antcontrib" />   
+    
+  </configurations>
+
+  <dependencies>
+     <dependency org="cagridtestframework"
+                name="jaxrpc"
+                rev="1.1"
+                conf="compile->master"/>  
+                
+    <dependency org="globus"
+                name="globus_wsrf_mds_aggregator_stubs"
+                rev="4.0.3nci"
+                conf="compile->master"/>  
+                
+     <dependency org="globus"
+                name="globus_wsrf_servicegroup_stubs"
+                rev="4.0.3nci"
+                conf="compile->master"/>    
+                
+     <dependency org="globus"
+                name="globus_wsrf_servicegroup"
+                rev="4.0.3nci"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-authentication-service-stubs"
+                rev="1.2"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-authentication-service-client"
+                rev="1.2"
+                conf="compile->master"/>  
+                
+    <dependency org="edu.wustl"
+                name="commonpackage"
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-opensaml"
+                rev="1.2"
+                conf="compile->master"/>   
+                
+    <dependency org="cagrid"
+                name="cagrid-dorian-common"
+                rev="1.2"
+                conf="compile->master"/>                 
+
+    <dependency org="cagrid"
+                name="cagrid-servicesecurityprovider-client"
+                rev="1.2"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-servicesecurityprovider-common"
+                rev="1.2"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-introduce-servicetools"
+                rev="1.2"
+                conf="compile->master"/>    
+                
+    <dependency org="cagrid"
+                name="cagrid-advertisement"
+                rev="1.2"
+                conf="compile->master"/>    
+                
+    <dependency org="cagrid"
+                name="cagrid-discovery"
+                rev="1.2"
+                conf="compile->master"/>    
+                
+    <dependency org="cagrid"
+                name="cagrid-metadatautils"
+                rev="1.2"
+                conf="compile->master"/>
+                
+    <dependency org="cagrid"
+                name="cagrid-metadata-common"
+                rev="1.2"
+                conf="compile->master"/>
+                
+    <dependency org="cagrid"
+                name="cagrid-data-common"
+                rev="1.2"
+                conf="compile->master"/>    
+                
+    <dependency org="cagrid"
+                name="cagrid-data-cql"
+                rev="1.2"
+                conf="compile->master"/> 
+                
+    <dependency org="catissuesuitegridtest"
+                name="csmapi"
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-dorian-client"
+                rev="1.2"
+                conf="compile->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-dorian-stubs"
+                rev="1.2"
+                conf="compile->master"/> 
+
+    <dependency org="log4j" 
+                name="log4j" 
+                rev="1.2.8"
+                conf="compile->master"/> 
+                
+    <dependency org="addressing" 
+                name="addressing" 
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="axis" 
+                name="axis" 
+                rev="1.2RC2_1242"
+                conf="compile->master"/> 
+                
+    <dependency org="org.hibernate"
+                name="hibernate"
+                rev="3.1.3"
+                conf="compile->master; runtime->default"/>   
+ 
+
+    <dependency org="cagrid"
+                name="cagrid-data-utils"
+                rev="1.2"
+                conf="compile->master"/>                  
+               
+    <dependency org="globus"
+                name="wsrf_core"
+                rev="4.0.3"
+                conf="compile->master"/>  
+             
+    <dependency org="globus"
+                name="wsrf_core_stubs"
+                rev="4.0.3"
+                conf="compile->master"/>              
+              
+    <dependency org="edu.wustl"
+                name="catissuecore"
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="catissuecore-client"
+                name="catissuecore-client"
+                rev="1.0"
+                conf="compile->master"/>      
+          
+    <dependency org="catissuesuite"
+                name="catissuesuite-stubs"
+                rev="1.0"
+                conf="compile->master"/>    
+    <dependency org="cagrid"
+                name="cagrid-core"
+                rev="1.2"
+                conf="compile->master"/>   
+                
+    <dependency org="commons-logging"
+                name="commons-logging"
+                rev="1.0.4"
+                conf="compile->master"/>    
+                
+    <dependency org="cog-jglobus"
+                name="cog-jglobus"
+                rev="1.0b"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-data-stubs"
+                rev="1.2"
+                conf="compile->master"/>                 
+                
+    <!-- no compile time below here -->
+ 
+    <dependency org="opensaml"
+                name="opensaml"
+                rev="1.0"
+                conf="runtime->master"/> 
+                
+
+    <dependency org="javax.activation"
+                name="activation"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+    <dependency org="ant-contrib"
+                name="ant-contrib"
+                rev="1.0b2"
+                conf="antcontrib,runtime->master"/>   
+                
+    <dependency org="aspectj"
+                name="aspectjrt"
+                rev="1.2rc1"
+                conf="runtime->master"/>      
+                
+    <dependency org="axis-url"
+                 name="axis-url"
+                 rev="1.0"
+                 conf="runtime->master"/>  
+                 
+    <dependency org="org.globus"
+                 name="bootstrap"
+                 rev="1.0"
+                 conf="runtime->master"/>    
+                 
+    <dependency org="c3p0"
+                name="c3p0"
+                rev="0.8.5.2"
+                conf="runtime->master"/>   
+                
+    <dependency org="cagrid"
+                name="cagrid-authentication-service-common"
+                rev="1.2"
+                conf="runtime->master"/>   
+                
+    <dependency org="cagrid"
+                name="cagrid-authz-common"
+                rev="1.2"
+                conf="runtime->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-cadsr-client"
+                rev="1.2"
+                conf="runtime->master"/>                 
+    <dependency org="cagrid"
+                name="cagrid-cadsr-common"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-cadsr-portal"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-cadsr-service"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-cadsr-stubs"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-cadsr-tests"
+                rev="1.2"
+                conf="runtime->master"/>   
+    <dependency org="cagrid"
+                name="cagrid-core-resources"
+                rev="1.2"
+                conf="runtime->master"/>   
+                
+    <dependency org="cagrid"
+                name="cagrid-dataextensions-style-cacore32"
+                rev="1.2"
+                conf="runtime->master"/>     
+                
+    <dependency org="cagrid"
+                name="cagrid-dataextensions-sdkstyle"
+                rev="1.2"
+                conf="runtime->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-data-service"
+                rev="1.2"
+                conf="runtime->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-data-tools"
+                rev="1.2"
+                conf="runtime->master"/>       
+                
+    <dependency org="cagrid"
+                name="cagrid-data-validation"
+                rev="1.2"
+                conf="runtime->master"/>   
+                
+    <dependency org="cagrid"
+                name="cagrid-gridca"
+                rev="1.2"
+                conf="runtime->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-gridgrouper-client"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-gridgrouper-common"
+                rev="1.2"
+                conf="runtime->master"/> 
+    <dependency org="cagrid"
+                name="cagrid-gridgrouper-stubs"
+                rev="1.2"
+                conf="runtime->master"/>    
+                
+                
+    <dependency org="cagrid"
+                name="cagrid-metadata-data"
+                rev="1.2"
+                conf="runtime->master"/> 
+                
+    <dependency org="cagrid"
+                name="cagrid-metadata-security"
+                rev="1.2"
+                conf="runtime->master"/>                 
+                
+    <dependency org="cagrid"
+                name="cagrid-sdkquery32-core"
+                rev="1.2"
+                conf="runtime->master"/>    
+                
+    <dependency org="cagrid"
+                name="cagrid-servicesecurityprovider-service"
+                rev="1.2"
+                conf="runtime->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-servicesecurityprovider-stubs"
+                rev="1.2"
+                conf="runtime->master"/>        
+                
+    <dependency org="castor"
+                name="castor"
+                rev="0.9.9"
+                conf="runtime->master"/>    
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-tests"
+                rev="1.0"
+                conf="runtime->master"/>   
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-common"
+                rev="1.0"
+                conf="runtime->master"/> 
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-service"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-client"
+                rev="1.0"
+                conf="runtime->master"/>     
+                
+    <dependency org="gov.nih.nci.security"
+                name="clm"
+                rev="3.2"
+                conf="runtime->master"/>   
+    <dependency org="globus"
+                name="cog-axis"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="cog-tomcat"
+                rev="4.0.3"
+                conf="runtime->master"/>      
+                
+    <dependency org="globus"
+                name="cog-url"
+                rev="4.0.3"
+                conf="runtime->master"/>          
+                
+    <dependency org="commonj"
+                name="commonj"
+                rev="1.0"
+                conf="runtime->master"/>   
+                
+    <dependency org="commons-beanutils"
+                name="commons-beanutils"
+                rev="1.6"
+                conf="runtime->master"/>    
+                
+    <dependency org="commons-cli"
+                name="commons-cli"
+                rev="2.0"
+                conf="runtime->master"/>    
+                
+    <dependency org="commons-codec"
+                name="commons-codec"
+                rev="1.3"
+                conf="runtime->master"/>     
+                
+    <dependency org="commons-collections"
+                name="commons-collections"
+                rev="3.0"
+                conf="runtime->master"/> 
+                
+    <dependency org="commons-dbcp"
+                name="commons-dbcp"
+                rev="1.2.1"
+                conf="runtime->master"/>    
+                
+    <dependency org="commons-digester"
+                name="commons-digester"
+                rev="1.5"
+                conf="runtime->master"/>  
+                
+    <dependency org="commons-discovery"
+                name="commons-discovery"
+                rev="0.2"
+                conf="runtime->master"/>    
+               
+    <dependency org="commons-httpclient"
+                name="commons-httpclient"
+                rev="3.0.1"
+                conf="runtime->master"/> 
+                
+    <dependency org="commons-lang"
+                name="commons-lang"
+                rev="1.0.1"
+                conf="runtime->master"/>  
+                
+    <dependency org="concurrent"
+                name="concurrent"
+                rev="1.0"
+                conf="runtime->master"/>   
+                
+    <dependency org="cryptix"
+                name="cryptix"
+                rev="1.2nci"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="cryptix-asn1"
+                rev="4.0.3"
+                conf="runtime->master"/>
+                
+    <dependency org="globus"
+                name="cryptix32"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="globus_resolution_service"
+                rev="4.0.3"
+                conf="runtime->master"/>   
+                
+    <dependency org="globus"
+                name="globus_resolution_stubs_java"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="globus_resolution_test"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="globus_transfer_service"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="globus_transfer_stubs_java"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+     <dependency org="globus"
+                name="globus_transfer_test"
+                rev="4.0.3"
+                conf="runtime->master"/>         
+                
+    <dependency org="globus"
+                name="globus_usage_core"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="globus_usage_packets_common"
+                rev="4.0.3"
+                conf="runtime->master"/>   
+                
+    <dependency org="globus"
+                name="globus_wsrf_tools_test"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+     <dependency org="globus"
+                name="globus_wsrf_mds_aggregator"
+                rev="4.0.3"
+                conf="runtime->master"/>    
+                
+                
+    <dependency org="grouper"
+                name="grouper"
+                rev="1.1"
+                conf="runtime->master"/>   
+                
+    <dependency org="wsdl4j"
+                name="wsdl4j"
+                rev="1.5.1"
+                conf="runtime->master"/>  
+                
+    <dependency org="wss4j"
+                name="wss4j"
+                rev="1.0nci"
+                conf="runtime->master"/>   
+                
+    <dependency org="xalan"
+                name="xalan"
+                rev="2.6.0"
+                conf="runtime->master"/>    
+                
+    <dependency org="javax.xml"
+                name="saaj"
+                rev="1.1"
+                conf="runtime->master"/>        
+                
+    <dependency org="jce-jdk"
+                name="jce-jdk"
+                rev="1.3_1.25nci"
+                conf="runtime->master"/>      
+                
+    <dependency org="jdom"
+                name="jdom"
+                rev="1.0"
+                conf="runtime->master"/>      
+                
+    <dependency org="org.ietf.jgss"
+                name="jgss"
+                rev="4.0.3nci"
+                conf="runtime->master"/>                 
+    <dependency org="net.sourceforge.jtds"
+                name="jtds"
+                rev="1.2"
+                conf="runtime->master"/>       
+
+    <dependency org="junit"
+                name="junit"
+                rev="4.1"
+                conf="runtime->master"/> 
+                
+    <dependency org="mail"
+                name="mail"
+                rev="1.2nci"
+                conf="runtime->master"/>                
+
+    <dependency org="mysql" 
+                name="mysql-connector-java" 
+                rev="3.0.16-ga"
+                conf="runtime->master" >    
+      <artifact name="mysql-connector-java" 
+                url="https://ncimvn.nci.nih.gov/nexus/content/groups/public/mysql/mysql-connector-java/3.0.16-ga/mysql-connector-java-3.0.16-ga-bin.jar"/>  
+    </dependency>
+    
+    <dependency org="naming"
+                name="naming-common"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+    <dependency org="naming"
+                name="naming-java"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+    <dependency org="naming"
+                name="naming-factory"
+                rev="1.0"
+                conf="runtime->master"/>    
+                
+    <dependency org="naming"
+                name="naming-resources"
+                rev="1.0"
+                conf="runtime->master"/> 
+                
+    <dependency org="odmg"
+                name="odmg"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+                
+    <dependency org="com.oracle"
+                name="ojdbc14"
+                rev="10.2.0.4.0"
+                conf="runtime->master"/> 
+   
+    <dependency org="globus"
+                name="puretls"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="org.dspace.xmlui.xml"
+                name="xml-commons-resolver"
+                rev="1.1"
+                conf="runtime->master"/> 
+                
+                
+    <dependency org="servlet-jsp"
+                name="servlet-jsp"
+                rev="2.3.1_1.2.1"
+                conf="runtime->master"/> 
+                
+    <dependency org="edu.wustl"
+                name="shippingtracking"
+                rev="1.0"
+                conf="runtime->master"/>   
+                
+    <dependency org="org.springframework"
+                name="spring"
+                rev="1.2.7"
+                conf="runtime->master"/> 
+                
+    <dependency org="org.springframework"
+                name="spring-richclient"
+                rev="1.0"
+                conf="runtime->master"/>  
+                
+    <dependency org="struts"
+                name="struts"
+                rev="1.1"
+                conf="runtime->master"/> 
+               
+     <dependency org="subject"
+                name="subject"
+                rev="0.2.1"
+                conf="runtime->master"/>    
+                
+    <dependency org="globus"
+                name="wsrf_common"
+                rev="4.0.3"
+                conf="runtime->master"/>   
+                
+    <dependency org="globus"
+                name="wsrf_core_registry"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_core_registry_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+                
+    <dependency org="globus"
+                name="wsrf_core_registry"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="wsrf_core_registry_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+                
+    <dependency org="globus"
+                name="wsrf_core_samples_authzservice"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+                
+    <dependency org="globus"
+                name="wsrf_core_samples_authzservice_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="wsrf_core_samples_counter"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+    <dependency org="globus"
+                name="wsrf_core_samples_counter_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+                
+    <dependency org="globus"
+                name="wsrf_core_samples_mgmt"
+                rev="4.0.3"
+                conf="runtime->master"/> 
+                
+                  
+    <dependency org="globus"
+                name="wsrf_core_samples_mgmt_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/>           
+                
+                
+    <dependency org="globus"
+                name="wsrf_provider_jce"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_test"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_test_interop"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_test_interop_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_test_unit"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_test_unit_stubs"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_tools"
+                rev="4.0.3"
+                conf="runtime->master"/>  
+                
+    <dependency org="xml-apis"
+                name="xml-apis"
+                rev="1.3.02"
+                conf="runtime->master"/>  
+                
+                             
+    <dependency org="xml-security"
+                name="xmlsec"
+                rev="1.2.1"
+                conf="runtime->master"/>    
+    <dependency org="apache-xerces"
+                name="xercesImpl"
+                rev="2.7.1"
+                conf="runtime->master"/>  
+ 
+  </dependencies>
+
+</ivy-module>

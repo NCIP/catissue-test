@@ -3,16 +3,14 @@
 <!--Ant Script for create Build for caTISSUE Core-->
 
 <project name="caTissueCore Client" >
-	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
-			<classpath>
-				<pathelement location="./lib/ant-contrib.jar" />
-			</classpath>
-		</taskdef>
+  <import file="ivy-targets.xml"/>
+  
+
 	<!--define require dir and Properties -->	
 	<property name="base.dir" value="."/>
 	<property name="target.dir" value="./bin" />
 	<property name="conf.dir" value="conf" />
-	<property name="lib.dir" value="lib" />
+  <property name="lib.dir" value="lib"/>
 	<property name="src.dir" value="./src" />
 	<property name="report.dir" value="." />
 	<property name="mysql.dialect" value="org.hibernate.dialect.MySQLDialect"/>
@@ -25,7 +23,7 @@
 	<path id="cp">
 		<pathelement path="${conf.dir}"/>
 		<pathelement path="${base.dir}/bin"/>
-		<fileset dir="lib">
+    <fileset dir="lib">
 			<include name="**/*.jar"/>
 		</fileset>
 		
@@ -40,17 +38,17 @@
 	</path>
 	 
  
-    <target name="compile">
+    <target name="compile" depends="ivy-compile">
 	  	<javac destdir="${target.dir}" includes="**/*.*" includeAntRuntime="false">
 	            <src path="${base.dir}/src"/>
 	            <classpath>
-	       		  <fileset dir="lib">
+                <fileset dir="lib">
 	        			<include name="**/*.jar"/>
 	        	  </fileset>
 	            </classpath>
 	     </javac>
     </target>
-	<target name="init">		
+	<target name="init" depends="ivy-antcontrib">		
 
 		<copy file="./my_hib/myhibernate.cfg.xml" tofile="./my_hib/hibernate.cfg.xml" overwrite="true"/>
 		<if>
@@ -90,7 +88,7 @@
 	</target>
 
 	<!-- run TestClient java file -->
-	<target name="runQuery" depends="init,compile">
+  <target name="runQuery" depends="init, compile, ivy-runtime">
 		<setproxy proxyhost="ptproxy.persistent.co.in" proxyport="8080" proxyuser="sachin_lale" proxypassword="$achin123"/>
 		<java classname="CaTissueClient" fork="true">
 			<jvmarg value="-Xms128m"/>
@@ -103,7 +101,7 @@
 		</java>
 	</target>
 	
-	<target name="runCQL" depends="init,compile">
+	<target name="runCQL" depends="init, compile, ivy-runtime">
 			<setproxy proxyhost="ptproxy.persistent.co.in" proxyport="8080" proxyuser="sachin_lale" proxypassword="$achin123"/>
 			<java classname="TestCaTissueClient" fork="true">
 				<jvmarg value="-Xms128m"/>
