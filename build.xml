@@ -4,34 +4,26 @@
 
 <project name="caGrid_Automation" default="" basedir=".">
 
-
+  <import file="ivy-targets.xml"/>
+  
 	<property name="base.dir" value="." />
 	<property name="classes.dir" value="./Classes" />
 	<property name="lib.dir" value="./lib" />
 	<property name="src.dir" value="./src" />
-
-		<taskdef resource="net/sf/antcontrib/antcontrib.properties">
-		<classpath>
-			<pathelement location="lib/ant-contrib.jar" />
-		</classpath>
-	</taskdef>
-
 	
 	<!-- COMPILE TESTS-->
 	<path id="cpath">
 		<fileset dir="${lib.dir}">
 			<include name="**/*.jar" />
 		</fileset>
-		<!-- <fileset dir="${lib.dir}/lib">
-			<include name="**/*.jar" />
-		</fileset>-->
 	</path>
 
 	<!-- =================================================================== -->
 	<!-- Compile -->
 	<!-- =================================================================== -->
 
-	<target name="compile" description="Compile">
+	<target name="compile" depends="ivy-compile">
+    <mkdir dir="${classes.dir}"/>
 		<delete includeemptydirs="true">
 		    <fileset dir="${classes.dir}" includes="**/*.*" defaultexcludes="false"/>
 		  </delete>

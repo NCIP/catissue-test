@@ -1,0 +1,142 @@
+<ivy-module version="1.0">
+  <info organisation="ncicb"
+        module="catissue" />
+  <configurations>
+    <conf name="default" />
+    <conf name="compile" />
+  </configurations>
+
+  <dependencies>
+                              
+                                                        
+    <dependency org="log4j" 
+                name="log4j" 
+                rev="1.2.14"
+                conf="compile->master"/> 
+                   
+    <dependency org="cagrid" 
+                name="cagrid-dorian-stubs" 
+                rev="1.2"
+                conf="compile->master"/> 
+                
+    <dependency org="axis" 
+                name="axis" 
+                rev="1.2RC2_1242"
+                conf="compile->master"/>        
+              
+    <dependency org="org.apache" 
+                name="addressing" 
+                rev="1.0"
+                conf="compile->master"/>   
+                
+    <dependency org="net.sf.opencsv"
+                name="opencsv"
+                rev="1.8"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-opensaml"
+                rev="1.3"
+                conf="compile->master"/> 
+              
+    <dependency org="cagrid"
+                name="cagrid-data-stubs"
+                rev="1.0"
+                conf="compile->master"/>     
+                
+    <dependency org="cagrid"
+                name="cagrid-core"
+                rev="1.2"
+                conf="compile->master"/>  
+                
+    <dependency org="cagrid"
+                name="cagrid-data-common"
+                rev="1.2"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-data-utils"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="cog-jglobus"
+                name="cog-jglobus"
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-servicesecurityprovider-client"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-syncgts-common"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-syncgts-stubs"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-servicesecurityprovider-common"
+                rev="1.3"
+                conf="compile->master"/>   
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-authentication-service-stubs"
+                rev="1.3"
+                conf="compile->master"/>       
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-dorian-client"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-dorian-common"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="gov.nih.nci.cagrid"
+                name="cagrid-authentication-service-client"
+                rev="1.3"
+                conf="compile->master"/> 
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-common"
+                rev="1.0"
+                conf="compile->master"/> 
+                
+    <dependency org="catissuesuite"
+                name="catissuesuite-stubs"
+                rev="1.0"
+                conf="compile->master"/> 
+    <dependency org="globus"
+                name="wsrf_core"
+                rev="4.0.3"
+                conf="compile->master"/>  
+                
+    <dependency org="globus"
+                name="wsrf_core_stubs"
+                rev="4.0.3"
+                conf="compile->master"/>   
+    <dependency org="xmlunit"
+                name="xmlunit"
+                rev="1.3"
+                conf="compile->master"/>  
+                
+    <dependency org="commons-io"
+                name="commons-io"
+                rev="1.4"
+                conf="compile->master"/>
+                
+    <dependency org="cagridtestframework"
+                name="jaxrpc"
+                rev="1.1"
+                conf="compile->master"/> 
+
+  </dependencies>
+
+</ivy-module>
